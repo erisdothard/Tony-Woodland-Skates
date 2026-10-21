@@ -10,7 +10,7 @@ export const metadata: Metadata = { title: 'Tony', description: tony.lead };
 
 export default function TonyPage() {
   const portrait = photo('studio-tank');
-  const skateShot = photo('handplant');
+  const skateShot = photo('rb-mural-wallride');
   return (
     <>
       <section className="bg-fin">

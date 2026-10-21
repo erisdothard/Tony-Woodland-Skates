@@ -37,7 +37,7 @@ export function Footer() {
         <div className="mt-16 flex flex-wrap items-end justify-between gap-6 border-t border-ink pt-6 text-small text-asphalt">
           <Wordmark size="sm" className="text-ink" />
           <p>
-            © 2026 {site.name}. {site.city}.
+            © 2026 {site.name}. {site.city}. {footer.media}
           </p>
           <a href={footer.credit.href} className="link">
             {footer.credit.label}

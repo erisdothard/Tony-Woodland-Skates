@@ -19,12 +19,13 @@ await mkdir(out, { recursive: true });
 
 const exists = (p) => access(p).then(() => true, () => false);
 
-async function original(id) {
-  const file = path.join(cache, id);
+// Each manifest entry has a Drive `id` or a direct `url` (Rollerblade's press photos of Tony).
+async function original({ id, url }) {
+  const file = path.join(cache, id ?? Buffer.from(url).toString('base64url').slice(-40));
   if (!(await exists(file))) {
-    const url = `https://drive.usercontent.google.com/download?id=${id}&export=download&confirm=t`;
-    const res = await fetch(url);
-    if (!res.ok) throw new Error(`Drive ${id}: HTTP ${res.status}`);
+    const src = url ?? `https://drive.usercontent.google.com/download?id=${id}&export=download&confirm=t`;
+    const res = await fetch(src, { headers: { 'user-agent': 'Mozilla/5.0' } });
+    if (!res.ok) throw new Error(`${src}: HTTP ${res.status}`);
     await writeFile(file, Buffer.from(await res.arrayBuffer()));
   }
   let buf = await readFile(file);
@@ -38,7 +39,7 @@ async function original(id) {
 
 const entries = [];
 for (const p of manifest) {
-  const src = await original(p.id);
+  const src = await original(p);
   const img = sharp(src).rotate().resize({ width: LONG_EDGE, height: LONG_EDGE, fit: 'inside', withoutEnlargement: true });
   const { data, info } = await img.jpeg({ quality: 80, mozjpeg: true }).toBuffer({ resolveWithObject: true });
   await writeFile(path.join(out, `${p.key}.jpg`), data);

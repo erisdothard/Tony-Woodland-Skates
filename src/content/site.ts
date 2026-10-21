@@ -25,7 +25,7 @@ export const nav = {
 } as const;
 
 export const home = {
-  heroLabel: 'TONY Skate Club. Tony skating down a wooded road, from his film French Class.',
+  heroLabel: 'TONY Skate Club. Tony grinding a ledge at a skatepark, from a Razors Skate Co. clip.',
   split: {
     club: {
       word: 'Skate',
@@ -162,6 +162,8 @@ export const footer = {
     { title: 'Book', links: [{ href: '/tony', label: 'About Tony' }, { href: `mailto:${site.email}`, label: 'Email Tony' }] },
   ],
   credit: { label: 'Site by Syntra AI', href: 'https://syntraai.tech' },
+  // TODO(confirm): Rollerblade and Razors photo and footage use. Shown as a plain credit line for now.
+  media: 'Photos by Rollerblade and friends. Footage by Razors Skate Co.',
 } as const;
 
 export const notFound = {

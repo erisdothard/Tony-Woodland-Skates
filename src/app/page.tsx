@@ -8,8 +8,8 @@ import { club, edits, home } from '@/content/site';
 import { photo } from '@/content/photos';
 
 const SHEET = [
-  'dome-air', 'studio-reach', 'mountain-road', 'western-wheat', 'canopy-roll', 'studio-jump',
-  'handplant', 'moto-field', 'spine-air', 'studio-tank', 'palms-grind', 'horse',
+  'rb-mural-wallride', 'studio-reach', 'rb-nashville-skyline', 'western-wheat', 'rb-night-rail', 'studio-jump',
+  'fisheye-poles', 'moto-field', 'rb-nashville-street', 'studio-tank', 'rb-reflection', 'horse',
 ] as const;
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
       <Hero label={home.heroLabel} />
       <Split
         halves={[
-          { ...home.split.club, photo: photo('fisheye-poles'), ground: 'pants' },
+          { ...home.split.club, photo: photo('rb-garage'), ground: 'pants' },
           { ...home.split.tony, photo: photo('studio-hand'), ground: 'fin' },
         ]}
       />

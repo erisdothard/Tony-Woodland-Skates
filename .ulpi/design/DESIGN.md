@@ -48,9 +48,9 @@ is not used (Eris, 2026-10-21: "that was just vibes").
 ## Signature: the film and the ladder
 
 Revised 2026-10-21 (later the same day): Eris's TONY GIF was a mood reference, not an asset. Nothing
-from it is on the site. The hero *image* is open (see site.md): the "French Class" loop was rejected
-the same day as too quirky for the sponsored-athlete feel Eris wants. The type over it is the
-mockup's idea set live:
+from it is on the site. The hero is real sponsor footage: a Razors Skate Co. clip of Tony hitting a park ledge, 12 s,
+looping, muted, square. On phones it is a 9:16 crop, full bleed. From md it stands as a square
+poster column on concrete, the mockup's layout. The type over it is the mockup's idea set live:
 - the ladder, TONY four times, ink, sized by the viewport, stepping in once on load in four beats
   200 ms apart with no easing, then holding. It never strobes;
 - the rails, SKATE CLUB vertical at both edges, bold then thin;

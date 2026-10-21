@@ -380,6 +380,116 @@ export const photos = [
     "width": 1333,
     "height": 2000,
     "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAYABADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIFAwT/xAAjEAACAgIBAgcAAAAAAAAAAAABAgMRAAQSBSETFDFBYZHh/8QAFgEBAQEAAAAAAAAAAAAAAAAABAID/8QAGBEBAQADAAAAAAAAAAAAAAAAAQACAxH/2gAMAwEAAhEDEQA/AKi27BYSVHuSO1ZO6vGwZI/DsE3zIzu6q0sWm8urGqsi2VYkdh69h8Y3Sz5vWSaVQFkplUtyr7yx42adJJ9XadSgmV0YU1iqGYwxbmrEqIvJEFA8vzDDDGzKU68b/9k="
+  },
+  {
+    "key": "rb-garage",
+    "set": "skate",
+    "alt": "Tony crouched low on his skates under a white parking garage, in red pants and a grey long sleeve",
+    "credit": "Rollerblade",
+    "src": "/photos/rb-garage.jpg",
+    "width": 1334,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAYABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAG/8QAJhAAAgEDAgQHAAAAAAAAAAAAAQIDAAQREyEFFTFREiIjMnHh8P/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/EABgRAQEBAQEAAAAAAAAAAAAAAAEAEQIS/9oADAMBAAIRAxEAPwDdSyxwwvK58qdcDNBX9yl6guIyZIhtGE33Pf7peWaNLViHQ/JzvWQSGXmc6WcTyW5b10gHh1G7EnAWt3KOfQyHN4DA2iViZh7lABz3oEXj8P1WSeSZ5jl2lIP7qaqqaRL/2Q=="
+  },
+  {
+    "key": "rb-mural-wallride",
+    "set": "skate",
+    "alt": "Tony wallriding a painted wall beside a mural at night, shirtless, arms spread",
+    "credit": "Rollerblade",
+    "src": "/photos/rb-mural-wallride.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAUABADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAYDBAX/xAAjEAACAQQBBAMBAAAAAAAAAAABAgMABBEhEgUGMVFCYXGB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAVEQEBAAAAAAAAAAAAAAAAAAABAP/aAAwDAQACEQMRAD8Aii7jt2hZhC7MvxDbP5qrNl1Rr7qSWqRmEcsOXXY9/VJkEjZVFYKGOD7/AJTN25MIuoRZPNm5ci3ksRuqKxleOBeanLaPutKzne1nSWPBZSSAfGwRRRUl/9k="
+  },
+  {
+    "key": "rb-night-rail",
+    "set": "skate",
+    "alt": "Tony grinding a handrail at night with a flash lighting the bushes below",
+    "credit": "Rollerblade",
+    "src": "/photos/rb-night-rail.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAUABADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMBBAUG/8QAJBAAAgEDAwMFAAAAAAAAAAAAAQIDAAQRBRIxITJxE0FSYZH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAA//EABcRAQEBAQAAAAAAAAAAAAAAAAABAhH/2gAMAwEAAhEDEQA/AOW0y2tHNwb1nQpETEFHc/sPFU3hbPXGTzWnBpUzzN6QlkT5KucH7PAqbq0ithvdhnJypYE/gp2B8LMbcNk9ueaVOxdDu6+aKKlkj//Z"
+  },
+  {
+    "key": "rb-lace-up",
+    "set": "skate",
+    "alt": "Tony in a yellow beanie lacing up black Rollerblade skates on a ledge",
+    "credit": "Rollerblade",
+    "src": "/photos/rb-lace-up.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAUABADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUEBgf/xAAmEAACAQQBAgYDAAAAAAAAAAABAgMABAUREiFRBhMiIzFBcYGR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgH/xAAZEQADAQEBAAAAAAAAAAAAAAAAAQIRMTL/2gAMAwEAAhEDEQA/AIfh7LNF5k96NRqvBCBrk5I6b71dhLahOTOu9bO3FZ9kYJbGWG0eWGVX0EX6BJ+dH8n+Uzxs4DNazrG90vteokFu2qE1gmtE2b1Ll3WQbChQB+qb4i2gmtmZ4VLA65dQdUUUK8lXT//Z"
+  },
+  {
+    "key": "rb-park-air",
+    "set": "skate",
+    "alt": "Tony flying over a skatepark bowl with mountains behind",
+    "credit": "Rollerblade",
+    "src": "/photos/rb-park-air.jpg",
+    "width": 2000,
+    "height": 1333,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAED/8QAIBAAAgEEAgMBAAAAAAAAAAAAAQIRAAMEEgUhEzFxkf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAETESH/2gAMAwEAAhEDEQA/ALg8pm2cS8b9ttS51uOJie61XlcvxAhFumI6X2f3qlZTN5HTYlR6BM0ZVUkHUT8qF84kKZ//2Q=="
+  },
+  {
+    "key": "rb-bowl",
+    "set": "skate",
+    "alt": "Tony carving the lip of a wide concrete bowl",
+    "credit": "Rollerblade",
+    "src": "/photos/rb-bowl.jpg",
+    "width": 2000,
+    "height": 1333,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgQFBv/EACQQAAIBAgUEAwAAAAAAAAAAAAECAwARBBITITEFBiOBMkFS/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAVEQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEQMRAD8AontzVg8c2hn/ACDcejxS6dCd8Q0M8okjawU3Pu4rQ4Vi+DidvkyAna255oQBmY/dTIX/2Q=="
+  },
+  {
+    "key": "rb-nashville-skyline",
+    "set": "skate",
+    "alt": "Tony skating a downtown Nashville path with the skyline behind him, one arm up",
+    "credit": "Rollerblade",
+    "src": "/photos/rb-nashville-skyline.jpg",
+    "width": 1334,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAYABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFBv/EACEQAAEEAQUAAwAAAAAAAAAAAAEAAgMRBAUSITFBFCJx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAWEQEBAQAAAAAAAAAAAAAAAAARAAH/2gAMAwEAAhEDEQA/ALmgQfGxpWRu3NMl2efFSdTxe0G/Qs/pGYGYhtwaS0AbjSqw5bYmGORhjrqz5+JMCUx9Hg2ATfc9mhSYGO8xvkeKmIAFmwAOhwhCkVDC/9k="
+  },
+  {
+    "key": "rb-nashville-street",
+    "set": "skate",
+    "alt": "Tony skating a Nashville street past parked cars in a white tee",
+    "credit": "Rollerblade",
+    "src": "/photos/rb-nashville-street.jpg",
+    "width": 1334,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAYABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAf/EACMQAAIBAwQBBQAAAAAAAAAAAAECAwAEEQUSIUExBiRxgfH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/xAAWEQEBAQAAAAAAAAAAAAAAAAABACH/2gAMAwEAAhEDEQA/ALLS8uBEZIYiSCu0BeO80rWb1poYUnmt4ijE7S4JxjHIGTSoNTtZvb3DhoZsKqZ2kfPHHVWW3p6AstxAiSoUKcOAPGD15o0p3bYtOsXO57OBm7JSn29gsJkEM80SOc7Y5CoB/OPqiitpBf/Z"
+  },
+  {
+    "key": "rb-reflection",
+    "set": "skate",
+    "alt": "Tony skating along a wet curb in downtown Nashville, reflected in the water",
+    "credit": "Rollerblade",
+    "src": "/photos/rb-reflection.jpg",
+    "width": 1334,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAYABADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYBAwQF/8QAIhAAAQQCAQQDAAAAAAAAAAAAAQIDBBEAIUEFBhIUEzHh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwL/xAAYEQEBAQEBAAAAAAAAAAAAAAABABEhAv/aAAwDAQACEQMRAD8AY4r0eYppTJJokEEURrNhaBH1iz0mU7EktKkFRBTuxXiORXP5kyO4pam1oZi2sOEB2rHjxoc1lq7H5DO3A6I417fySHFKIBoHd65y/wBsKjpNiyMMMU5Cu3//2Q=="
+  },
+  {
+    "key": "rb-portrait",
+    "set": "model",
+    "alt": "Tony looking over his shoulder in a white tee on a sunny street",
+    "credit": "Rollerblade",
+    "src": "/photos/rb-portrait.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAUABADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCAwb/xAAgEAACAgICAgMAAAAAAAAAAAABAgMRAAQFIRMxEkFR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAZEQEAAgMAAAAAAAAAAAAAAAAAEUEBAiH/2gAMAwEAAhEDEQA/ANRymwNLjZZ440LqKRWuiTkOJnm2oUl2BF8yp7iuiOvo+jlu5pjkdKTXaV4S1djujgNd9OBEia/GgH6TkyqOF8O9Oea2dQsPFGyUKF9rfvGksrLKwFEBQRYwwwxZ2p//2Q=="
+  },
+  {
+    "key": "rb-skates",
+    "set": "skate",
+    "alt": "Close on black Rollerblade Twister skates with yellow laces on a Nashville bridge",
+    "credit": "Rollerblade",
+    "src": "/photos/rb-skates.jpg",
+    "width": 1600,
+    "height": 2000,
+    "blur": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAUABADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCAwT/xAAgEAABBAICAwEAAAAAAAAAAAABAgMEEQASBTETFCFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAZEQACAwEAAAAAAAAAAAAAAAAAARESMUH/2gAMAwEAAhEDEQA/AHnJrZjw2S8NUqcSiimxZwhNxXJU1xqlL8mqzXZ+5m5jjJksstNzF+Em171dg/KrJQuKkw3NfdUWSqyNRd/uTslxVGCFlUij0lNjL1GxR6OGGEGf/9k="
   }
 ] as const satisfies readonly Photo[];
 

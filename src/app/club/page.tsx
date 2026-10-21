@@ -8,10 +8,10 @@ import { photo } from '@/content/photos';
 
 export const metadata: Metadata = { title: 'Club', description: club.lead };
 
-const STRIP = ['mountain-road', 'park-cruise', 'bowl-low', 'mountain-road-2', 'ledge-grind', 'overlook-road', 'bowl-palms', 'park-air'] as const;
+const STRIP = ['rb-nashville-skyline', 'park-cruise', 'rb-nashville-street', 'mountain-road', 'rb-lace-up', 'bowl-low', 'rb-reflection', 'mountain-road-2', 'rb-bowl', 'rb-park-air'] as const;
 
 export default function ClubPage() {
-  const hero = photo('dome-air');
+  const hero = photo('rb-garage');
   return (
     <>
       <section className="mx-auto grid max-w-[var(--container-content)] gap-10 px-4 pt-28 pb-20 md:grid-cols-[7fr_5fr] md:items-end md:px-8 md:pt-36 md:pb-28">

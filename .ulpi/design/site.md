@@ -28,10 +28,12 @@ the vibe only; we are not copying its features. No RSVP, no merch, no ticketing 
   hraOpDyJZ0o; Rollerblade "Twister XT Unboxing by Tony Woodland" cc2pZo5FazI.
 
 ## Media
-- Hero: OPEN. Eris's TONY GIF was inspiration only and is not used. "French Class" (IMG_3264.mp4)
-  was cut as a loop and rejected on 2026-10-21: too quirky for the sponsored-athlete feel. Options:
-  a stop-motion cut of the skate stills, or real street footage from Tony. Until then the hero is
-  the fisheye still with the ladder and rails.
+- Hero: a 12 s loop of a Razors Skate Co. clip of Tony ("Ledge day", 640x640, from their Facebook
+  page), encoded by `scripts/hero.mjs` as a square (desktop poster column) and a 9:16 crop (phones).
+  Found 2026-10-21 after YouTube refused downloads from this server. TODO(confirm) with Razors.
+  Eris's TONY GIF was inspiration only. "French Class" (IMG_3264.mp4) was tried and rejected.
+- Rollerblade press photos of Tony (14, from rollerblade.com, listed in scripts/photos.json with a
+  `url` and `credit: Rollerblade`). TODO(confirm) with Rollerblade before launch.
 - Portfolio clip: the Rhude x Honda "Rooted" promo (IMG_5273.mov), encoded by the same script.
 - Not used: IMG_2268.mp4, a group lifestyle commercial Tony appears in for a few seconds.
 - Photos: `scripts/photos.json` lists Drive file IDs, roles and alt text. `scripts/photos.mjs`
