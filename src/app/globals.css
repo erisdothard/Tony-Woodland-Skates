@@ -1,26 +1,143 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Tokens are locked in .ulpi/design/DESIGN.md. Change them there first. */
+@theme {
+  --color-concrete: #eef2f5;
+  --color-ink: #000000;
+  --color-pants: #eb3a23;
+  --color-pants-deep: #c42a16;
+  --color-fin: #b5c9d4;
+  --color-asphalt: #4f5866;
+  --color-white: #ffffff;
+
+  --font-sans: var(--font-archivo), "Arial", sans-serif;
+
+  --text-small: 0.875rem;
+  --text-small--line-height: 1.45;
+  --text-body: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem);
+  --text-body--line-height: 1.55;
+  --text-title: clamp(1.375rem, 1.1rem + 1vw, 1.75rem);
+  --text-title--line-height: 1.1;
+  --text-display: clamp(2.5rem, 1.4rem + 5vw, 6.5rem);
+  --text-display--line-height: 0.98;
+
+  --radius-none: 0;
+  --ease-ui: cubic-bezier(0.2, 0, 0, 1);
+  --container-content: 1320px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    background: var(--color-concrete);
+    color: var(--color-ink);
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    font-family: var(--font-sans);
+    font-size: var(--text-body);
+    line-height: 1.55;
+    font-variation-settings: "wdth" 100;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: var(--color-pants);
+    color: var(--color-ink);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-ink);
+    outline-offset: 3px;
+  }
+  .on-ink :focus-visible,
+  .on-photo :focus-visible {
+    outline-color: var(--color-white);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  /* Archivo's width axis carries the voice: brand words widest, reading copy normal. */
+  .type-brand {
+    font-weight: 900;
+    font-variation-settings: "wdth" 125;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    line-height: 0.86;
+  }
+  .type-rail-thin {
+    font-weight: 200;
+    font-variation-settings: "wdth" 125;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .type-display {
+    font-size: var(--text-display);
+    line-height: var(--text-display--line-height);
+    font-weight: 800;
+    font-variation-settings: "wdth" 118;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+  .type-title {
+    font-size: var(--text-title);
+    line-height: var(--text-title--line-height);
+    font-weight: 700;
+    font-variation-settings: "wdth" 110;
+    text-wrap: balance;
+  }
+  .measure {
+    max-width: 62ch;
+  }
+
+  /* Links: ink, underlined, deep orange on hover. Never an arrow. */
+  .link {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    transition: color 160ms var(--ease-ui), text-decoration-thickness 160ms var(--ease-ui);
+  }
+  .link:hover {
+    color: var(--color-pants-deep);
+    text-decoration-thickness: 2px;
+  }
+  .on-ink .link:hover,
+  .on-pants .link:hover {
+    color: inherit;
+  }
+
+  /* The one button shape: square, ink, wide label. */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-height: 3rem;
+    padding: 0.75rem 1.25rem;
+    background: var(--color-ink);
+    color: var(--color-white);
+    font-weight: 700;
+    font-variation-settings: "wdth" 112;
+    transition: background-color 160ms var(--ease-ui), color 160ms var(--ease-ui);
+  }
+  .btn:hover {
+    background: var(--color-pants-deep);
+  }
+  .on-pants .btn:hover {
+    background: var(--color-white);
+    color: var(--color-ink);
+  }
+  .on-ink .btn {
+    background: var(--color-white);
+    color: var(--color-ink);
+  }
+  .on-ink .btn:hover {
+    background: var(--color-pants);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0ms !important;
+    animation-duration: 0ms !important;
+  }
 }

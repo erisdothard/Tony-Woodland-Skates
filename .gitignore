@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# source media
+/.cache/
+/assets-src/
+
+# raw captures stay local; sheets and notes are committed
+/docs/inspo/*.png
+/docs/review/**/*.png

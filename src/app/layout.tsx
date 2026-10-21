@@ -1,29 +1,36 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import type { Metadata, Viewport } from 'next';
+import { Archivo } from 'next/font/google';
+import { Nav } from '@/components/Nav';
+import { Footer } from '@/components/Footer';
+import { site } from '@/content/site';
+import './globals.css';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+// One family. The width axis carries the voice (DESIGN.md "Type").
+const archivo = Archivo({
+  subsets: ['latin'],
+  axes: ['wdth'],
+  variable: '--font-archivo',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
-  title: "Tony Woodland Skates",
-  description: "Tony Woodland Skates — coming soon.",
+  metadataBase: new URL(site.url),
+  title: { default: site.name, template: `%s. ${site.name}` },
+  description: site.description,
+  openGraph: { title: site.name, description: site.description, siteName: site.name, type: 'website' },
+  twitter: { card: 'summary_large_image' },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export const viewport: Viewport = { themeColor: '#eef2f5' };
+
+export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className={archivo.variable}>
+      <body className="bg-concrete text-ink antialiased">
+        <Nav />
+        <main id="main">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
