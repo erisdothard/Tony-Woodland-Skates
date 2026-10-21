@@ -1,4 +1,4 @@
-// The stacked word ladder from the GIF. Brand words only (TONY, SKATE, CLUB, LOST).
+// The stacked word ladder from Eris's mockup. Brand words only (TONY, SKATE, CLUB, LOST).
 // Size it by the parent's width: the parent sets `container-type: inline-size`.
 export function Ladder({
   words,

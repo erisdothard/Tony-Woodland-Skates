@@ -7,7 +7,7 @@ the vibe only; we are not copying its features. No RSVP, no merch, no ticketing 
 
 | route | job | sections in order |
 |---|---|---|
-| `/` | Show the brand, then send people one of two ways | hero burst, the split (Club / Tony), the club field (short), edits room (featured edit plus list), contact sheet (12 photos), footer |
+| `/` | Show the brand, then send people one of two ways | hero film loop with ladder and rails, the split (Club / Tony), the club field (short), edits room (featured edit plus list), contact sheet (12 photos), footer |
 | `/club` | Get a local to show up | title + fisheye photo; the orange field: what it is, who it is for, what to bring, where and when (TODO(confirm)); a photo strip of skate shots; follow CTA |
 | `/tony` | Get a brand to book him | title + portrait; short bio; "Skate" block (Rollerblade team, street and freeride, setup, edits link); "Model" contact sheet of portfolio shots; press links; booking block |
 | `/edits` | Watch | the video room with every edit |
@@ -28,8 +28,12 @@ the vibe only; we are not copying its features. No RSVP, no merch, no ticketing 
   hraOpDyJZ0o; Rollerblade "Twister XT Unboxing by Tony Woodland" cc2pZo5FazI.
 
 ## Media
-- Hero burst: the 10 clean frames of Tony's GIF (frames 1–7 and 11–13). They are extracted by
-  `scripts/burst.mjs` from `assets-src/tony.gif`.
+- Hero: OPEN. Eris's TONY GIF was inspiration only and is not used. "French Class" (IMG_3264.mp4)
+  was cut as a loop and rejected on 2026-10-21: too quirky for the sponsored-athlete feel. Options:
+  a stop-motion cut of the skate stills, or real street footage from Tony. Until then the hero is
+  the fisheye still with the ladder and rails.
+- Portfolio clip: the Rhude x Honda "Rooted" promo (IMG_5273.mov), encoded by the same script.
+- Not used: IMG_2268.mp4, a group lifestyle commercial Tony appears in for a few seconds.
 - Photos: `scripts/photos.json` lists Drive file IDs, roles and alt text. `scripts/photos.mjs`
   downloads them from the "Operation Tony" Drive folder (link-shared), converts HEIC, auto-orients,
   resizes to a 2000px long edge, writes `public/photos/<key>.jpg` and generates

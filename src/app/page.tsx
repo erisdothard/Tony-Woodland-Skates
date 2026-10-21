@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Burst } from '@/components/Burst';
+import { Hero } from '@/components/Hero';
 import { Split } from '@/components/Split';
 import { ClubField } from '@/components/ClubField';
 import { VideoRoom } from '@/components/VideoRoom';
@@ -15,7 +15,7 @@ const SHEET = [
 export default function Home() {
   return (
     <>
-      <Burst label={home.heroLabel} />
+      <Hero label={home.heroLabel} />
       <Split
         halves={[
           { ...home.split.club, photo: photo('fisheye-poles'), ground: 'pants' },

@@ -1,4 +1,4 @@
-// TONY over a rule over four wheels, as in Tony's GIF. The wheels are the only circles on the site.
+// TONY over a rule over four wheels, from Eris's mockup; TODO(confirm) it is Tony's real mark. The wheels are the only circles on the site.
 export function Wordmark({ className = '', size = 'md' }: { className?: string; size?: 'sm' | 'md' | 'lg' }) {
   const text = { sm: 'text-[1.05rem]', md: 'text-[1.6rem]', lg: 'text-[3rem]' }[size];
   const wheel = { sm: 'size-[0.62rem] border-[1.5px]', md: 'size-[0.95rem] border-2', lg: 'size-[1.8rem] border-[3px]' }[size];

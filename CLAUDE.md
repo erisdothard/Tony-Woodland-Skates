@@ -15,7 +15,7 @@ Read before UI work:
 pnpm dev              # http://localhost:3000
 pnpm lint && pnpm build
 node scripts/photos.mjs   # pulls Drive photos -> public/photos + src/content/photos.ts
-node scripts/burst.mjs    # extracts hero burst frames from assets-src/tony.gif
+node scripts/hero.mjs     # encodes hero + portfolio loops from assets-src/*.mp4|mov (Drive clips)
 node scripts/shoot.mjs    # visual gate: screenshots to docs/review/<date>/
 ```
 

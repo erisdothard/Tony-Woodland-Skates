@@ -54,6 +54,10 @@ export default function TonyPage() {
                 {tony.skate.link}
               </Link>
             </p>
+            <div className="mt-10 border-t border-ink pt-6">
+              <h3 className="type-title">{tony.film.title}</h3>
+              <p className="measure mt-2 text-asphalt">{tony.film.body}</p>
+            </div>
           </div>
           <div className="relative aspect-[4/5] w-full">
             <Image src={skateShot.src} alt={skateShot.alt} fill sizes="(min-width: 768px) 55vw, 100vw" placeholder="blur" blurDataURL={skateShot.blur} className="object-cover" />
@@ -67,11 +71,27 @@ export default function TonyPage() {
             <h2 id="model" className="type-brand text-[clamp(3.5rem,10vw,8rem)]">
               {tony.model.title}
             </h2>
-            <div>
-              <p className="measure">{tony.model.body}</p>
-              <a href={`mailto:${site.email}`} className="btn mt-6">
-                {tony.model.cta}
-              </a>
+            <div className="grid gap-8 sm:grid-cols-[1fr_auto] sm:items-end">
+              <div>
+                <p className="measure">{tony.model.body}</p>
+                <a href={`mailto:${site.email}`} className="btn mt-6">
+                  {tony.model.cta}
+                </a>
+              </div>
+              <figure className="w-[9.5rem]">
+                <video
+                  className="aspect-[9/16] w-full bg-fin object-cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  poster={tony.model.reel.poster}
+                  src={tony.model.reel.src}
+                  aria-label={tony.model.reel.caption}
+                />
+                <figcaption className="mt-2 text-small text-asphalt">{tony.model.reel.caption}</figcaption>
+              </figure>
             </div>
           </div>
           <ContactSheet photos={photoSet('model')} />

@@ -63,8 +63,8 @@ export function Nav() {
             ))}
           </nav>
           <Link href="/" aria-label="TONY Skate Club, home" className="col-start-2">
-            <Wordmark size="md" className="hidden md:inline-flex" />
-            <Wordmark size="sm" className="md:hidden" />
+            <span className="hidden md:block"><Wordmark size="md" /></span>
+            <span className="md:hidden"><Wordmark size="sm" /></span>
           </Link>
           <nav aria-label="Secondary" className="hidden justify-end gap-8 md:flex">
             {nav.right.map((i) => (

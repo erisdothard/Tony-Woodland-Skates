@@ -25,7 +25,7 @@ export const nav = {
 } as const;
 
 export const home = {
-  heroLabel: 'TONY Skate Club. Tony Woodland skating under a parking garage in Nashville.',
+  heroLabel: 'TONY Skate Club. Tony skating down a wooded road, from his film French Class.',
   split: {
     club: {
       word: 'Skate',
@@ -54,6 +54,8 @@ export const club = {
     'TONY Skate Club is a free group skate on Nashville greenways. Tony started it so more people would get on wheels. Show up, roll at your pace, leave with a crew.',
   // TODO(confirm): Nashville Scene (May 2026) says Austin Black of Skate Nashville now hosts the
   // greenway skates. Confirm the club name, host, schedule and meet spot with Tony.
+  // TODO(confirm): Eris's mockup listed "Group lessons", "Freestyle training" and "Events". If
+  // those are real offers, they replace the greenway-only copy below.
   facts: [
     { term: 'Who', detail: 'Anyone. Inlines or quads, first day or tenth year.' },
     { term: 'Cost', detail: 'Free.' },
@@ -103,6 +105,16 @@ export const tony = {
     title: 'Model',
     body: 'Studio, western, motorcycle and lifestyle work. Tony shoots in Nashville and travels for the right job.',
     cta: 'Email Tony to book',
+    reel: {
+      src: '/hero/rooted.mp4',
+      poster: '/hero/rooted.jpg',
+      caption: 'Rooted, for Rhude and Honda.', // TODO(confirm): credit and whether it may be shown here
+    },
+  },
+  film: {
+    title: 'French Class',
+    body: 'A short skate film: Tony on a wooded road in plaid, with a French lesson for subtitles. The hero loop on the home page is cut from it.',
+    // TODO(confirm): who made it, and where it lives online so it can be linked or embedded.
   },
   press: {
     title: 'Press',

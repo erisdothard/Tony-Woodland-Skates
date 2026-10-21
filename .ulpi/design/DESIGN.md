@@ -24,10 +24,10 @@ He started free greenway group skates that anyone can join. The site has two job
 1. **Club:** make a Nashville local want to show up and skate.
 2. **Tony:** make a brand, photographer or editor want to book him, as a skater or as a model.
 
-His own GIF already sets the look. It is a stop-motion burst of one moment cut at 200 ms, low and close
-on orange pants and black skates under a white parking garage. The word TONY stacks four times and
-strobes over it, with SKATE CLUB rails on the edges and a wordmark of TONY over four wheels. We build
-that in code instead of inventing a new look.
+Eris's mockup GIF sets the mood: daylight concrete, orange pants and black skates, the word TONY
+stacked four times, SKATE CLUB rails up the edges, and a wordmark of TONY over four wheels. The site
+takes that mood and those type ideas and builds them over Tony's own photos and film. The GIF itself
+is not used (Eris, 2026-10-21: "that was just vibes").
 
 ## What the reference board taught us (docs/inspo/README.md)
 
@@ -45,20 +45,23 @@ that in code instead of inventing a new look.
 - No marquee ticker. No fake stats. No logo row of brands we have not confirmed.
 - Never put the orange behind small text in white, and never use orange for body text.
 
-## Signature: the burst
+## Signature: the film and the ladder
 
-The hero plays Tony's GIF as code. Ten clean frames are cut at the GIF's own rhythm: seven fast frames
-at 200 ms, then three where the TONY ladder strobes on, then three slow frames at 1000 ms, and loop.
-The ladder is live type, not baked pixels:
-- on desktop it runs wider than the photo column, black on concrete and white where it crosses the
-  photo (two clipped layers);
-- the frame counter is not shown, because it is not information.
-Reduced motion shows one frame with the ladder on and never strobes.
+Revised 2026-10-21 (later the same day): Eris's TONY GIF was a mood reference, not an asset. Nothing
+from it is on the site. The hero *image* is open (see site.md): the "French Class" loop was rejected
+the same day as too quirky for the sponsored-athlete feel Eris wants. The type over it is the
+mockup's idea set live:
+- the ladder, TONY four times, ink, sized by the viewport, stepping in once on load in four beats
+  200 ms apart with no easing, then holding. It never strobes;
+- the rails, SKATE CLUB vertical at both edges, bold then thin;
+- a thin ink line dropping out of the bottom, as the scroll cue.
+Reduced motion: the poster frame, the ladder at rest, no video playback.
 
 Echoes elsewhere, all static:
-- **The ladder** appears once more, in the footer: the word SKATE three times and then CLUB.
+- **The ladder** appears once more, in the footer: SKATE three times, then CLUB. The 404 page sets
+  LOST three times, then TONY.
 - **The wheel mark** (four circles, from the wordmark) is the bullet in fact lists and the favicon.
-- **The rails** (vertical SKATE CLUB) only appear in the hero.
+- **The rails** only appear in the hero.
 
 ## Color (locked)
 
