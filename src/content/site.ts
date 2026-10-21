@@ -113,7 +113,7 @@ export const tony = {
   },
   film: {
     title: 'French Class',
-    body: 'A short skate film: Tony on a wooded road in plaid, with a French lesson for subtitles. The hero loop on the home page is cut from it.',
+    body: 'A short skate film: Tony on a wooded road in plaid, with a French lesson for subtitles.',
     // TODO(confirm): who made it, and where it lives online so it can be linked or embedded.
   },
   press: {
