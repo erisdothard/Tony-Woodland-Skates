@@ -21,7 +21,7 @@ export default function Home() {
       <Hero label={home.heroLabel} />
       <Split
         halves={[
-          { ...home.split.club, photo: photo('bowl-wide'), ground: 'pants' },
+          { ...home.split.club, photo: photo('rb-garage'), ground: 'pants' },
           { ...home.split.tony, photo: photo('studio-hand'), moment: moment('tony-smile'), ground: 'fin' },
         ]}
       />
