@@ -6,10 +6,13 @@ import { VideoRoom } from '@/components/VideoRoom';
 import { ContactSheet } from '@/components/ContactSheet';
 import { club, edits, home } from '@/content/site';
 import { photo } from '@/content/photos';
+import { moment } from '@/content/moments';
 
+// Mostly skating (8 of 12), then four shoot days. Portrait frames only, for the even 4:5 grid.
 const SHEET = [
-  'rb-mural-wallride', 'studio-reach', 'rb-nashville-skyline', 'western-wheat', 'rb-night-rail', 'studio-jump',
-  'fisheye-poles', 'moto-field', 'rb-nashville-street', 'studio-tank', 'rb-reflection', 'horse',
+  'garage-perch', 'dome-air', 'headphones-ramp', 'fragrance-close',
+  'ledge-grind', 'garage-ledge', 'mountain-road-4', 'western-wheat',
+  'handplant', 'pool-air', 'garage-wall', 'night-hat',
 ] as const;
 
 export default function Home() {
@@ -18,8 +21,8 @@ export default function Home() {
       <Hero label={home.heroLabel} />
       <Split
         halves={[
-          { ...home.split.club, photo: photo('rb-garage'), ground: 'pants' },
-          { ...home.split.tony, photo: photo('studio-hand'), ground: 'fin' },
+          { ...home.split.club, photo: photo('bowl-wide'), ground: 'pants' },
+          { ...home.split.tony, photo: photo('studio-hand'), moment: moment('tony-smile'), ground: 'fin' },
         ]}
       />
       <VideoRoom
@@ -40,7 +43,7 @@ export default function Home() {
           </h2>
           <p className="text-asphalt">{home.sheet.body}</p>
         </div>
-        <ContactSheet photos={SHEET.map(photo)} />
+        <ContactSheet grid photos={SHEET.map(photo)} />
       </section>
       <ClubField title={home.club.title} body={home.club.body} facts={club.facts} cta={club.cta}>
         <p className="mt-8">

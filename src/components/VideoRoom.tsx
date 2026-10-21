@@ -21,7 +21,7 @@ export function VideoRoom({
   const [thumbFallback, setThumbFallback] = useState<Record<string, boolean>>({});
   const edit = edits[active];
   const H = headingLevel === 1 ? 'h1' : 'h2';
-  const thumb = `https://i.ytimg.com/vi/${edit.id}/${thumbFallback[edit.id] ? 'hqdefault' : 'maxresdefault'}.jpg`;
+  const thumb = edit.poster ?? `https://i.ytimg.com/vi/${edit.id}/${thumbFallback[edit.id] ? 'hqdefault' : 'maxresdefault'}.jpg`;
 
   return (
     <section aria-labelledby="video-room" className="on-ink bg-ink text-white">

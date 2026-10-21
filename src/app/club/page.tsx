@@ -1,17 +1,17 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import { ClubField } from '@/components/ClubField';
 import { ContactSheet } from '@/components/ContactSheet';
 import { Wheels } from '@/components/Wordmark';
 import { club } from '@/content/site';
+import Image from 'next/image';
 import { photo } from '@/content/photos';
 
 export const metadata: Metadata = { title: 'Club', description: club.lead };
 
-const STRIP = ['rb-nashville-skyline', 'park-cruise', 'rb-nashville-street', 'mountain-road', 'rb-lace-up', 'bowl-low', 'rb-reflection', 'mountain-road-2', 'rb-bowl', 'rb-park-air'] as const;
+const STRIP = ['garage-ledge', 'dome-air', 'mountain-road-4', 'headphones-air', 'ledge-grind', 'garage-perch', 'handplant', 'overlook-road', 'bowl-wide', 'garage-stairs', 'pool-air', 'canopy-roll'] as const;
 
 export default function ClubPage() {
-  const hero = photo('rb-garage');
+  const hero = photo('headphones-hands');
   return (
     <>
       <section className="mx-auto grid max-w-[var(--container-content)] gap-10 px-4 pt-28 pb-20 md:grid-cols-[7fr_5fr] md:items-end md:px-8 md:pt-36 md:pb-28">
@@ -41,7 +41,7 @@ export default function ClubPage() {
       </section>
 
       <section aria-label="Skate photos" className="mx-auto max-w-[var(--container-content)] px-4 pb-24 md:px-8 md:pb-36">
-        <ContactSheet photos={STRIP.map(photo)} rowHeight={240} />
+        <ContactSheet grid photos={STRIP.map(photo)} />
       </section>
     </>
   );

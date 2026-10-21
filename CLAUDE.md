@@ -22,4 +22,12 @@ node scripts/shoot.mjs    # visual gate: screenshots to docs/review/<date>/
 ## Rules
 - All copy lives in `src/content/site.ts`. Unverified facts carry `TODO(confirm)`.
 - Visual gate: every UI change gets 390px and 1440px captures in `docs/review/` before it is called done.
+- No soft media (Eris, 2026-10-21). The rule is about quality loss, not about photographic style:
+  no frame grabs of a moving skater used as photos, no image or video drawn larger than its real
+  pixels on a 2x laptop or a 3x phone (encode video at the source's native size). A video frame is
+  not a photo; for a still, use a real photograph. Check with `scripts/sharpness.mjs` and by viewing
+  the file at 1:1 before calling media done.
+- Professional photos are never "blurry". Slow shutter, light trails, motion drag, shallow focus and
+  grain are the photographer's choices and part of a shoot's mood. Never cut a frame from a shoot
+  Eris supplied for being soft; include every frame he picks.
 - Never commit original photos. `assets-src/` and the photo cache are git-ignored.

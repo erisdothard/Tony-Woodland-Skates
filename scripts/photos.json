@@ -3,299 +3,907 @@
     "key": "fisheye-poles",
     "id": "1vWSXhJq9p03Ihvs_sp0FRQtgkOpziHbz",
     "set": "skate",
-    "alt": "Tony mid-air seen from below, skates spread wide, between tall orange and teal poles against a white sky"
+    "alt": "Tony mid-air seen from below, skates spread wide, between tall orange and teal poles against a white sky",
+    "series": null
   },
   {
     "key": "dome-air",
     "id": "1UCSUzOowmIZXbj2mfYTKwqkcwdyCfDh1",
     "set": "skate",
-    "alt": "Tony high in the air over a concrete dome at a skatepark, pine trees behind"
+    "alt": "Tony high in the air over a concrete dome at a skatepark, pine trees behind",
+    "series": "parks"
   },
   {
     "key": "spine-air",
     "id": "1GzccJ9-Y0OECjLwTWuG41A9-DSfSnzhB",
     "set": "skate",
-    "alt": "Tony airing over a concrete spine under a pale blue sky"
+    "alt": "Tony airing over a concrete spine under a pale blue sky",
+    "series": "parks"
   },
   {
     "key": "canopy-roll",
     "id": "1vrHsfgR0K2-O_Hy6KkuDag554WhIC4xz",
     "set": "skate",
-    "alt": "Tony rolling toward the camera under a steel canopy, one hand raised"
+    "alt": "Tony rolling toward the camera under a steel canopy, one hand raised",
+    "series": "headphones"
   },
   {
     "key": "ledge-grind",
     "id": "12FuB7zDzt00pIx9ehRx0KcZeG4gHwHqF",
     "set": "skate",
-    "alt": "Tony grinding the top of a curved concrete ledge at dusk, arms out"
+    "alt": "Tony grinding the top of a curved concrete ledge at dusk, arms out",
+    "series": "parks"
   },
   {
     "key": "handplant",
     "id": "13ZaJKw0EGPUgyRShZJW2xJanDhw5pDo3",
     "set": "skate",
-    "alt": "Tony upside down in a handplant on a painted blue ledge"
+    "alt": "Tony upside down in a handplant on a painted blue ledge",
+    "series": "parks"
   },
   {
     "key": "palms-grind",
     "id": "1XjYoIqsLQQL6qk9-18kUXn9ScTat6pFL",
     "set": "skate",
-    "alt": "Tony crouched on a coping under tall palm trees"
+    "alt": "Tony crouched on a coping under tall palm trees",
+    "series": null
   },
   {
     "key": "park-air",
     "id": "10OoqXltyYcDNgZn_CbKPHiZ_sK7jaojQ",
     "set": "skate",
-    "alt": "Tony flying across a skatepark bowl in summer light"
+    "alt": "Tony flying across a skatepark bowl in summer light",
+    "series": "parks"
   },
   {
     "key": "mountain-road",
     "id": "1epAL0bRIRfGF8HQ2D-V3yuHmOOswAmDz",
     "set": "skate",
-    "alt": "Tony skating down a winding mountain road with a double yellow line"
+    "alt": "Tony skating down a winding mountain road with a double yellow line",
+    "series": null
   },
   {
     "key": "mountain-road-2",
     "id": "1xX_-fwYMPeoQ2QEovwLMLWA1HHRn2oZI",
     "set": "skate",
-    "alt": "Tony carving a mountain road bend beside a guard rail and pines"
+    "alt": "Tony carving a mountain road bend beside a guard rail and pines",
+    "series": null
   },
   {
     "key": "mountain-road-3",
     "id": "1ocbARk0jhbELeuC358dTsmYlQ8gUJaoj",
     "set": "skate",
-    "alt": "Tony far down a long mountain road between pine trees"
+    "alt": "Tony far down a long mountain road between pine trees",
+    "series": "mountain"
   },
   {
     "key": "overlook-road",
     "id": "1G3LEAKZ9zYsIolydnlGtNfrOjylYA65f",
     "set": "skate",
-    "alt": "Tony skating a road along a mountain overlook"
+    "alt": "Tony skating a road along a mountain overlook",
+    "series": "mountain"
   },
   {
     "key": "bowl-wide",
     "id": "1CvPgjkgy0571A8lglwBfkHl-I1jKhZka",
     "set": "skate",
-    "alt": "A wide empty concrete bowl with Tony small on its far wall"
+    "alt": "A wide empty concrete bowl with Tony small on its far wall",
+    "series": "parks"
   },
   {
     "key": "bowl-low",
     "id": "1KRzNBDyJiaAJ1lgr4icbYr2Q-W12oR6N",
     "set": "skate",
-    "alt": "Tony carving the bottom of a pale concrete bowl"
+    "alt": "Tony carving the bottom of a pale concrete bowl",
+    "series": null
   },
   {
     "key": "park-cruise",
     "id": "1ckDVmSnBbEH3-KuRhtLLcP6tVu0IhDNq",
     "set": "skate",
-    "alt": "Tony cruising a tree-lined path on skates with his jacket flying"
+    "alt": "Tony cruising a tree-lined path on skates with his jacket flying",
+    "series": null
   },
   {
     "key": "bowl-palms",
     "id": "1GkujBG9t7Zn-lEWJcgXhJwHg50YvpwQi",
     "set": "skate",
-    "alt": "Tony carving a bowl wall at sunset with palm trees behind"
+    "alt": "Tony carving a bowl wall at sunset with palm trees behind",
+    "series": null
   },
   {
     "key": "studio-tank",
     "id": "12oWGg3fJClu4_LnLdir5kN1oJPhPb68x",
     "set": "model",
-    "alt": "Studio portrait of Tony in a white tank, sunglasses and a chain, hands at his sides"
+    "alt": "Studio portrait of Tony in a white tank, sunglasses and a chain, hands at his sides",
+    "series": "studio"
   },
   {
     "key": "studio-reach",
     "id": "1AgMKD3_eO-8-WYszqhDUBYhnXn0tRDEY",
     "set": "model",
-    "alt": "Studio portrait of Tony reaching both hands toward the camera"
+    "alt": "Studio portrait of Tony reaching both hands toward the camera",
+    "series": "studio"
   },
   {
     "key": "studio-seated",
     "id": "1hJnyAoyod9pNZo1w1Ge4H2wStvj9_Dyi",
     "set": "model",
-    "alt": "Tony seated in the studio, chin on his hand, in sunglasses and a white tank"
+    "alt": "Tony seated in the studio, chin on his hand, in sunglasses and a white tank",
+    "series": "studio"
   },
   {
     "key": "studio-arms",
     "id": "1jIb2mzhCHg4VX7FRDr76YR4Ssv-89YiQ",
     "set": "model",
-    "alt": "Tony crossing his arms toward the camera on a white backdrop"
+    "alt": "Tony crossing his arms toward the camera on a white backdrop",
+    "series": "studio"
   },
   {
     "key": "studio-hand",
     "id": "1o5mpR0TT_rajyDaUlVkIY1lBXTr73PgB",
     "set": "model",
-    "alt": "Tony holding one open hand toward the lens in a white studio"
+    "alt": "Tony holding one open hand toward the lens in a white studio",
+    "series": "studio"
   },
   {
     "key": "studio-crossed",
     "id": "1vbFNURAJxSTsALj7IfG79Ki83vVKunb5",
     "set": "model",
-    "alt": "Tony with arms folded in a white tank and wristwatch"
+    "alt": "Tony with arms folded in a white tank and wristwatch",
+    "series": "studio"
   },
   {
     "key": "studio-jump",
     "id": "1wN4-Rh8fBy8FTDlzV0f7wUxO-sGH3ECZ",
     "set": "model",
-    "alt": "Tony jumping in the studio in olive cargo pants and black shoes"
+    "alt": "Tony jumping in the studio in olive cargo pants and black shoes",
+    "series": "studio"
   },
   {
     "key": "studio-floor",
     "id": "1x_yCB2NE1mbgGusRWUtiNTkDTypmtE0o",
     "set": "model",
-    "alt": "Tony sitting on the studio floor, knees up, in black shoes"
+    "alt": "Tony sitting on the studio floor, knees up, in black shoes",
+    "series": "studio"
   },
   {
     "key": "western-wheat",
     "id": "1bXT5MmR5vCQpBmwPu2fwrMJefZHGnWCT",
     "set": "model",
-    "alt": "Tony in a cream cowboy hat and brown jacket among tall dry grass"
+    "alt": "Tony in a cream cowboy hat and brown jacket among tall dry grass",
+    "series": "tall-grass"
   },
   {
     "key": "western-brim",
     "id": "1e8diBLTLp1CYY6hSCTaflTm2MlBCJEKQ",
     "set": "model",
-    "alt": "Tony tipping a cowboy hat in tall grass"
+    "alt": "Tony tipping a cowboy hat in tall grass",
+    "series": "tall-grass"
   },
   {
     "key": "western-stand",
     "id": "1XKNre7QSbYsAp5XUoZnuFdcezpUkpUne",
     "set": "model",
-    "alt": "Tony standing in tall grass in a cowboy hat and tan trousers"
+    "alt": "Tony standing in tall grass in a cowboy hat and tan trousers",
+    "series": "tall-grass"
   },
   {
     "key": "horse",
     "id": "1dsCyHF1qCRF3EtepHUbn_71H5UM_23P1",
     "set": "model",
-    "alt": "Tony in a white shirt and cowboy hat beside a palomino horse"
+    "alt": "Tony in a white shirt and cowboy hat beside a palomino horse",
+    "series": "ranch"
   },
   {
     "key": "moto-field",
     "id": "1CWFxhC2cEoxtg_dqCAzPXBb5alaIlD1_",
     "set": "model",
-    "alt": "Tony riding a motorcycle straight at the camera across a golden field"
+    "alt": "Tony riding a motorcycle straight at the camera across a golden field",
+    "series": null
   },
   {
     "key": "moto-plane",
     "id": "1EQQD9sEAthJELhxiTnk9RLO2yMi6PRhd",
     "set": "model",
-    "alt": "Tony on a motorcycle in a field with a small plane flying low behind him"
+    "alt": "Tony on a motorcycle in a field with a small plane flying low behind him",
+    "series": null
   },
   {
     "key": "porsche-road",
     "id": "1F-505nQ3_BGwV2L9DJR3ivanJBCKVwqs",
     "set": "model",
-    "alt": "Tony driving a white Porsche along a tree-lined road, motion blurred"
+    "alt": "Tony driving a white Porsche along a tree-lined road, motion blurred",
+    "series": "roadside"
   },
   {
     "key": "porsche-jacket",
     "id": "1_fz4qwCZywSRvu5DH7KDkFiPslx-0GGi",
     "set": "model",
-    "alt": "Tony in a navy jacket and sunglasses in front of a white Porsche"
+    "alt": "Tony in a navy jacket and sunglasses in front of a white Porsche",
+    "series": null
   },
   {
     "key": "yellow-shirt",
     "id": "1YjCYNvOPS6d8ESnVdE5jYYjgCKWyYyWm",
     "set": "model",
-    "alt": "Tony in a yellow shirt and red trousers in a green field"
+    "alt": "Tony in a yellow shirt and red trousers in a green field",
+    "series": null
   },
   {
     "key": "night-porsche",
     "id": "1r58c6kYPoNfC3_SKYdNMZcsZOresNPed",
     "set": "model",
-    "alt": "Tony at night in a white cowboy hat leaning on a white Porsche"
+    "alt": "Tony at night in a white cowboy hat leaning on a white Porsche",
+    "series": "night"
   },
   {
     "key": "river-rail",
     "id": "1N9-2pD_4-fgHeLmm-jW26dujKQi7mpKM",
     "set": "model",
-    "alt": "Tony sitting on a boat rail over a lake in orange shorts"
+    "alt": "Tony sitting on a boat rail over a lake in orange shorts",
+    "series": null
   },
   {
     "key": "dunes-white",
     "id": "1rJKPnjxbrOP0R5MLo_7J5146IdaDAnqm",
     "set": "model",
-    "alt": "Tony in all white standing on grey sand dunes"
+    "alt": "Tony in all white standing on grey sand dunes",
+    "series": "dunes"
   },
   {
     "key": "overlook-arms",
     "id": "1QyytyouUDpXH5W9YPaEjfC7C3ajk4A6O",
     "set": "model",
-    "alt": "Tony with arms spread on a rocky overlook under a cloudy sky"
+    "alt": "Tony with arms spread on a rocky overlook under a cloudy sky",
+    "series": null
   },
   {
     "key": "rb-garage",
     "url": "https://www.rollerblade.com/storage/Athlete/Rollerblade2_Tony-23.jpg",
     "set": "skate",
     "credit": "Rollerblade",
-    "alt": "Tony crouched low on his skates under a white parking garage, in red pants and a grey long sleeve"
+    "alt": "Tony crouched low on his skates under a white parking garage, in red pants and a grey long sleeve",
+    "series": null
   },
   {
     "key": "rb-mural-wallride",
     "url": "https://www.rollerblade.com/storage/Athlete/IMG_6808.jpg",
     "set": "skate",
     "credit": "Rollerblade",
-    "alt": "Tony wallriding a painted wall beside a mural at night, shirtless, arms spread"
+    "alt": "Tony wallriding a painted wall beside a mural at night, shirtless, arms spread",
+    "series": null
   },
   {
     "key": "rb-night-rail",
     "url": "https://www.rollerblade.com/storage/Athlete/IMG_6806.jpg",
     "set": "skate",
     "credit": "Rollerblade",
-    "alt": "Tony grinding a handrail at night with a flash lighting the bushes below"
+    "alt": "Tony grinding a handrail at night with a flash lighting the bushes below",
+    "series": null
   },
   {
     "key": "rb-lace-up",
     "url": "https://www.rollerblade.com/storage/Athlete/IMG_6938.jpg",
     "set": "skate",
     "credit": "Rollerblade",
-    "alt": "Tony in a yellow beanie lacing up black Rollerblade skates on a ledge"
+    "alt": "Tony in a yellow beanie lacing up black Rollerblade skates on a ledge",
+    "series": null
   },
   {
     "key": "rb-park-air",
     "url": "https://www.rollerblade.com/storage/ProductGallery/a9554ae0f030b3f34e427794cf72810e.jpg",
     "set": "skate",
     "credit": "Rollerblade",
-    "alt": "Tony flying over a skatepark bowl with mountains behind"
+    "alt": "Tony flying over a skatepark bowl with mountains behind",
+    "series": null
   },
   {
     "key": "rb-bowl",
     "url": "https://www.rollerblade.com/storage/ProductGallery/55189d2716aa1680679691b51ba81eb0.jpg",
     "set": "skate",
     "credit": "Rollerblade",
-    "alt": "Tony carving the lip of a wide concrete bowl"
+    "alt": "Tony carving the lip of a wide concrete bowl",
+    "series": null
   },
   {
     "key": "rb-nashville-skyline",
     "url": "https://www.rollerblade.com/storage/Article/22257PRIMARY_TWISTER_EDGE_2021-3-18_30.jpg",
     "set": "skate",
     "credit": "Rollerblade",
-    "alt": "Tony skating a downtown Nashville path with the skyline behind him, one arm up"
+    "alt": "Tony skating a downtown Nashville path with the skyline behind him, one arm up",
+    "series": null
   },
   {
     "key": "rb-nashville-street",
     "url": "https://www.rollerblade.com/storage/Article/22256PRIMARY_TWISTER_EDGE_2021-3-18_9.jpg",
     "set": "skate",
     "credit": "Rollerblade",
-    "alt": "Tony skating a Nashville street past parked cars in a white tee"
+    "alt": "Tony skating a Nashville street past parked cars in a white tee",
+    "series": null
   },
   {
     "key": "rb-reflection",
     "url": "https://www.rollerblade.com/storage/Article/22258PRIMARY_TWISTER_EDGE_2021-3-18_53.jpg",
     "set": "skate",
     "credit": "Rollerblade",
-    "alt": "Tony skating along a wet curb in downtown Nashville, reflected in the water"
+    "alt": "Tony skating along a wet curb in downtown Nashville, reflected in the water",
+    "series": null
   },
   {
     "key": "rb-portrait",
     "url": "https://www.rollerblade.com/storage/Article/22259SPECIALIZED_TWISTER_EDGE_2021-3-18_69.jpg",
     "set": "model",
     "credit": "Rollerblade",
-    "alt": "Tony looking over his shoulder in a white tee on a sunny street"
+    "alt": "Tony looking over his shoulder in a white tee on a sunny street",
+    "series": null
   },
   {
     "key": "rb-skates",
     "url": "https://www.rollerblade.com/storage/Article/22260SPECIALIZED_TWISTER_EDGE_2021-3-18_74.jpg",
     "set": "skate",
     "credit": "Rollerblade",
-    "alt": "Close on black Rollerblade Twister skates with yellow laces on a Nashville bridge"
+    "alt": "Close on black Rollerblade Twister skates with yellow laces on a Nashville bridge",
+    "series": null
+  },
+  {
+    "key": "mountain-road-4",
+    "id": "1E5E1XBTFRG6MyenewUbFYO7SkApPuWJZ",
+    "set": "skate",
+    "series": "mountain",
+    "alt": "Tony skating a mountain road in a green tracksuit, hazy ridges behind"
+  },
+  {
+    "key": "mountain-switchback",
+    "id": "1qCeBGflZCYnIVtMPozS1mKTfC8Qys31b",
+    "set": "skate",
+    "series": "mountain",
+    "alt": "A desert mountain switchback from above, Tony a small figure skating it"
+  },
+  {
+    "key": "dunes-walk",
+    "id": "1VbKEIcJbGZXx6op7CRdl4VvF92kBwJr9",
+    "set": "model",
+    "series": "dunes",
+    "alt": "Tony in white walking alone across dark sand dunes"
+  },
+  {
+    "key": "dunes-golden",
+    "id": "1IGC1LDDh1a8D1C10qnYb-WfPVmzIeoR9",
+    "set": "model",
+    "series": "dunes",
+    "alt": "Tony small in the distance below a golden sand dune at dusk"
+  },
+  {
+    "key": "dunes-ridge",
+    "id": "1HGkLOlsbnn2gRrZS9FKCNqqeLIEAeN-B",
+    "set": "model",
+    "series": "dunes",
+    "alt": "Tony standing on a dune ridge with a mountain behind"
+  },
+  {
+    "key": "dunes-light",
+    "id": "1fadFzT7S_B7SkeMfI8yeJq_G3gWvHxU2",
+    "set": "model",
+    "series": "dunes",
+    "alt": "Tony in white, a small figure on a vast dune under a pale sky"
+  },
+  {
+    "key": "dunes-leap",
+    "id": "1-jPwkIlnxzAzzNq9IDI6OyAO1vADXjBv",
+    "set": "model",
+    "series": "dunes",
+    "alt": "Tony in white leaping on top of a sand dune, one arm up"
+  },
+  {
+    "key": "dunes-lying",
+    "id": "1DmwyIG4JSeDAQJzUiVPELFr9VTk--iWq",
+    "set": "model",
+    "series": "dunes",
+    "alt": "Tony in a white hood lying in dark sand"
+  },
+  {
+    "key": "bike-skyline",
+    "id": "1EKIHgk3qHT7En4ovq8uxcL3h1XxedKMd",
+    "set": "model",
+    "series": "bike",
+    "alt": "Tony riding a white bike in a teal tracksuit across a Nashville walkway, the skyline and bridge behind"
+  },
+  {
+    "key": "bike-wave",
+    "id": "1Qe0JjDph5gB4mztVNBgm95iU6uRIr3cn",
+    "set": "model",
+    "series": "bike",
+    "alt": "Tony on a bike in a teal tracksuit and sunglasses, one arm thrown up, under autumn birches"
+  },
+  {
+    "key": "ranch-bench",
+    "id": "1PLvVOydPU1YotEIJ49GuptHnvAXvpzlq",
+    "set": "model",
+    "series": "ranch",
+    "alt": "Tony in a cowboy hat and American flag shirt sitting on picnic tables beside a saddled horse"
+  },
+  {
+    "key": "ranch-flag",
+    "id": "1zJ0Vlib0UmMExlplg9ARcEMe4GaaAbPm",
+    "set": "model",
+    "series": "ranch",
+    "alt": "Tony in a cowboy hat and American flag shirt leaning beside a dark horse"
+  },
+  {
+    "key": "ranch-palomino",
+    "id": "1C_A2Qh8_vzCz_lj7mrjlSj6Y18xj88EH",
+    "set": "model",
+    "series": "ranch",
+    "alt": "Tony in a cream lace shirt and white trousers standing beside a palomino horse, pines behind"
+  },
+  {
+    "key": "ranch-stable",
+    "id": "1xo97J2CcqAlmRYvO831fxlOJAyDPPsOG",
+    "set": "model",
+    "series": "ranch",
+    "alt": "Tony in a brown cowboy hat beside a horse inside a lit wooden stable"
+  },
+  {
+    "key": "ranch-sunset",
+    "id": "1vg9xKuJHZHltuH8mbctqlqGzh-RnK6CE",
+    "set": "model",
+    "series": "ranch",
+    "alt": "Tony and a horse in silhouette against a low sun"
+  },
+  {
+    "key": "ranch-lake",
+    "id": "1s0E2QEHcqTu9w4naa8hwJTuk7ecFrpI4",
+    "set": "model",
+    "series": "ranch",
+    "alt": "Tony by a lake at dusk while a horse grazes beside him"
+  },
+  {
+    "key": "fragrance-black",
+    "id": "1lqDM_ELhKQ7Uxn3Kxfr8ZUrCUJ80HqH5",
+    "set": "model",
+    "series": "fragrance",
+    "alt": "Tony in a black jacket and white tee holding a fragrance bottle against studio grey"
+  },
+  {
+    "key": "fragrance-collar",
+    "id": "1oXDNH6QbFVdGtpIGnZPzzyUeKOUzyTU9",
+    "set": "model",
+    "series": "fragrance",
+    "alt": "Tony with a hand in his hair, holding a fragrance bottle at his chest"
+  },
+  {
+    "key": "fragrance-hands",
+    "id": "1dF43XYDTpMdQ7DrVrxtISnrIjRavTBXU",
+    "set": "model",
+    "series": "fragrance",
+    "alt": "Close on Tony’s hands holding a fragrance bottle, a steel watch on his wrist"
+  },
+  {
+    "key": "fragrance-chair",
+    "id": "1cLv1R_HwRaO-dtRf9bgG47F-Co1NU3mj",
+    "set": "model",
+    "series": "fragrance",
+    "alt": "Tony in a pale grey suit lounging in a tan leather chair, a fragrance bottle raised to his eye"
+  },
+  {
+    "key": "fragrance-recline",
+    "id": "16-w6rgDilA_ZCjuTJHT1zjiduG9l03vL",
+    "set": "model",
+    "series": "fragrance",
+    "alt": "Tony in a grey suit reclining in a leather chair, a fragrance bottle in hand"
+  },
+  {
+    "key": "fragrance-close",
+    "id": "1vythnEANt7Vy_6P_uiyasgRsa5YC0R2y",
+    "set": "model",
+    "series": "fragrance",
+    "alt": "Close portrait of Tony holding a fragrance bottle beside his eye"
+  },
+  {
+    "key": "fragrance-cover",
+    "id": "1ht71GF0_tetabPH-rcr9D81_As0iQ9uR",
+    "set": "model",
+    "series": "fragrance",
+    "alt": "Tony half hiding his face behind a fragrance bottle"
+  },
+  {
+    "key": "fragrance-lounge",
+    "id": "1NRa1dUMW8pxi2BjI5BwA6bWoqqhF3RxM",
+    "set": "model",
+    "series": "fragrance",
+    "alt": "Tony seated in a leather chair in a grey suit, a hand at his chin"
+  },
+  {
+    "key": "garage-ledge",
+    "id": "1059Du1dGd1RCgHRvr4epr0j6Lx8YEIeo",
+    "set": "skate",
+    "series": "garage",
+    "alt": "Tony in a red beanie and teal shirt grinding a parking garage ledge at night"
+  },
+  {
+    "key": "garage-carve",
+    "id": "1hL-ywFdoIiMNySxewZVujWu5pcChd-xP",
+    "set": "skate",
+    "series": "garage",
+    "alt": "Tony carving a parking garage floor at night, city lights streaking behind"
+  },
+  {
+    "key": "garage-wall",
+    "id": "15ypv_Xzn6DV8aMZAIzu34XW0SVdS-32A",
+    "set": "skate",
+    "series": "garage",
+    "alt": "Tony skating along a parking garage wall at night, light trails behind"
+  },
+  {
+    "key": "garage-perch",
+    "id": "1FQv6zqqdd6B_YRYy7N4aJNE1c_wfzoYy",
+    "set": "skate",
+    "series": "garage",
+    "alt": "Tony sitting on a parking garage wall at night in his skates, smiling"
+  },
+  {
+    "key": "garage-roof",
+    "id": "1PfwE3JsGIhC0-Wsto0Q6ylffXe9Zr_9a",
+    "set": "skate",
+    "series": "garage",
+    "alt": "Tony on the rim of a parking garage roof, seen from far below"
+  },
+  {
+    "key": "garage-stairs",
+    "id": "1Sy2Ery2iIPWZ4XknFDbGeMJNLWkwoDQW",
+    "set": "skate",
+    "series": "garage",
+    "alt": "Tony skating down parking garage stairs, seen from above"
+  },
+  {
+    "key": "garage-truck",
+    "id": "1clWsGiQkVRClJjId74c9LKIbapomD-Zk",
+    "set": "skate",
+    "series": "garage",
+    "alt": "Tony standing in his skates in front of a pickup inside a parking garage"
+  },
+  {
+    "key": "summer-barn",
+    "id": "1ztzwls2BAS5IfXqM82Q4FRnbfYJ3quEZ",
+    "set": "model",
+    "series": "summer",
+    "alt": "Shirtless Tony holding dumbbells in a string-lit barn"
+  },
+  {
+    "key": "summer-cap",
+    "id": "1y4278MtggYttdshgYcCUwcWJ1I3mhol1",
+    "set": "model",
+    "series": "summer",
+    "alt": "Shirtless Tony in a trucker cap laughing over a table of gear outdoors"
+  },
+  {
+    "key": "summer-cap-2",
+    "id": "14RBN_1rMAf_Rk9DBb1Oa7_vQqYKx2bQZ",
+    "set": "model",
+    "series": "summer",
+    "alt": "Shirtless Tony in a trucker cap smiling, trees behind"
+  },
+  {
+    "key": "summer-hat",
+    "id": "1z_trQqvbJKtjHV3_G_QmJRSTr7-mHzM5",
+    "set": "model",
+    "series": "summer",
+    "alt": "Shirtless Tony in a cowboy hat, in profile, in a lit barn"
+  },
+  {
+    "key": "summer-reach",
+    "id": "1fbhoaiovo8qIVrue2AfE27IJ7hqnGzxU",
+    "set": "model",
+    "series": "summer",
+    "alt": "Shirtless Tony in red sunglasses reaching toward the camera in a barn"
+  },
+  {
+    "key": "headphones-ramp",
+    "id": "17p4E6c-Tst0mD3hod125xFTaqIZXKQAC",
+    "set": "model",
+    "series": "headphones",
+    "alt": "Tony skating a wooden ramp in a dark room lit by a single shaft of light"
+  },
+  {
+    "key": "headphones-air",
+    "id": "11XgbFv7xSmIIWaOFT6EGh7HAqm9nrxZF",
+    "set": "model",
+    "series": "headphones",
+    "alt": "Tony airing over a wooden ramp in a dim warehouse"
+  },
+  {
+    "key": "headphones-smile",
+    "id": "1lvCWIyUoMb2xnLcKTkz3xGYRlJ3PAMUV",
+    "set": "model",
+    "series": "headphones",
+    "alt": "Tony in headphones smiling in warm low light"
+  },
+  {
+    "key": "headphones-look",
+    "id": "1Sdc2PQN-IPSDh_186DaPY5BigNm-QhSo",
+    "set": "model",
+    "series": "headphones",
+    "alt": "Tony in headphones and a denim shirt looking up in a dark room"
+  },
+  {
+    "key": "headphones-seated",
+    "id": "1soSzYCg8ZboQ_StnMBk7bR8SJUCZQIsL",
+    "set": "model",
+    "series": "headphones",
+    "alt": "Tony seated with a hand on his headphones in a dim warm room"
+  },
+  {
+    "key": "headphones-hands",
+    "id": "1lpEcQzV3tgzjVQtji7O_RNg7oocMSD4c",
+    "set": "model",
+    "series": "headphones",
+    "alt": "Tony in headphones reaching both hands toward the camera at a covered skatepark"
+  },
+  {
+    "key": "headphones-feet",
+    "id": "1VZOsTFD8CFOhWRwlBF2hjTexYrwoiN8j",
+    "set": "model",
+    "series": "headphones",
+    "alt": "Tony lying back at a skatepark in headphones, a skate in the foreground"
+  },
+  {
+    "key": "cruiser-lean",
+    "id": "1ISiOsd3nG6ALGCydsbw4ZZPLlsz2a4Z7",
+    "set": "model",
+    "series": "portraits",
+    "alt": "Tony in a mustard sweater leaning on a vintage Toyota Land Cruiser"
+  },
+  {
+    "key": "cruiser-seated",
+    "id": "1AlyBS_Ly_EXVrglTRdDu8jG5nKz2efRF",
+    "set": "model",
+    "series": "portraits",
+    "alt": "Tony in a mustard sweater sitting on the bumper of a vintage Land Cruiser"
+  },
+  {
+    "key": "tee-gloves",
+    "id": "1ci1PhFpq8mqGtd9ZuMLe1SiN8r_3mCPs",
+    "set": "model",
+    "series": "portraits",
+    "alt": "Tony in a cream tee and black cap, white gloves in hand, in a studio"
+  },
+  {
+    "key": "studio-hands-head",
+    "id": "1F2fXlpSktUNsnv5dQ8Ayi4361XmS9Q3L",
+    "set": "model",
+    "series": "studio",
+    "alt": "Tony with his hands on his head in yellow-lens glasses, white studio"
+  },
+  {
+    "key": "moto-hangar",
+    "id": "1_bVtFFiebScEHiP6wrNRC2aPIwAtUNsY",
+    "set": "model",
+    "series": "hangar",
+    "alt": "Tony on a motorcycle at the mouth of a hangar, a small plane behind"
+  },
+  {
+    "key": "moto-flyover",
+    "id": "1POMcIsrcshLckLEA9uTBhvoNtCaMWOxS",
+    "set": "model",
+    "series": "hangar",
+    "alt": "Tony on a motorcycle in a field while a small plane flies low overhead"
+  },
+  {
+    "key": "roadside-collar",
+    "id": "169sGAv2QRn3b121uv1BjuQ44pob6YGqI",
+    "set": "model",
+    "series": "roadside",
+    "alt": "Black and white portrait of Tony holding his jacket collar"
+  },
+  {
+    "key": "roadside-walk",
+    "id": "1rOUsdpa-HofNK6Abj0LxYXYTsAOIu2Vr",
+    "set": "model",
+    "series": "roadside",
+    "alt": "Black and white: Tony walking across grass beside a curving road"
+  },
+  {
+    "key": "truck-cab",
+    "id": "1Np54Vqz0FKe7gRlMg7IkkSMO5bWcgHOu",
+    "set": "model",
+    "series": "truck",
+    "alt": "Tony sitting in the open door of a white pickup"
+  },
+  {
+    "key": "truck-door",
+    "id": "1o0CKuc9mohDxJgPMJ78RTV0kZlwQyuVD",
+    "set": "model",
+    "series": "truck",
+    "alt": "Tony leaning on the open door of a white pickup under a blue sky"
+  },
+  {
+    "key": "truck-bed",
+    "id": "17zFydMdsLdnfYj_RMxlcw0N1eKF5kW4H",
+    "set": "model",
+    "series": "truck",
+    "alt": "Tony standing in the bed of a white pickup by a lake, gulls overhead"
+  },
+  {
+    "key": "truck-laugh",
+    "id": "1TNK1xNO5mIvoC04rASk9WF2Hg_DIU-CT",
+    "set": "model",
+    "series": "truck",
+    "alt": "Tony laughing in the cab of a pickup with a red interior"
+  },
+  {
+    "key": "truck-mirror",
+    "id": "1rOdMUjEejjPaTeMMptvItV0sotWYNgo-",
+    "set": "model",
+    "series": "truck",
+    "alt": "Tony in sunglasses at the wheel of a pickup, a hand on the mirror"
+  },
+  {
+    "key": "truck-window",
+    "id": "1lNDipk4_xaHiFti0U-M-TpY3FwIpaiv3",
+    "set": "model",
+    "series": "truck",
+    "alt": "Tony in sunglasses leaning out of a pickup window"
+  },
+  {
+    "key": "truck-lake",
+    "id": "1gK6AcbZT4yk1ejbMbo8Yd2jk2t0hA8Re",
+    "set": "model",
+    "series": "truck",
+    "alt": "Tony leaning on a white pickup by the water"
+  },
+  {
+    "key": "truck-drive",
+    "id": "1tGya4Fg3HnWWs7__7M1E5SistJx0visL",
+    "set": "model",
+    "series": "truck",
+    "alt": "Tony at the wheel of a pickup in profile, a lake behind"
+  },
+  {
+    "key": "booth-seated",
+    "id": "1K12Hhk-PQOrViUMtlycar4_JpPAXmWsf",
+    "set": "model",
+    "series": "booth",
+    "alt": "Tony in a black wide-brim hat and open patterned shirt, seated in dry grass"
+  },
+  {
+    "key": "booth-stand",
+    "id": "1Zn8DJ23KM36EbJHrSJfAsclS6obRVUfI",
+    "set": "model",
+    "series": "booth",
+    "alt": "Tony in a wide-brim hat posing in front of a ticket booth"
+  },
+  {
+    "key": "booth-pair",
+    "id": "1v3b3807HdsCSRSTsIwzJD5uNU8zr4GeL",
+    "set": "model",
+    "series": "booth",
+    "alt": "Tony and a woman posing at a ticket booth"
+  },
+  {
+    "key": "pool-air",
+    "id": "1zwK1PFynBVX2TqSBLzwoDeDd-otL8LPJ",
+    "set": "skate",
+    "series": "parks",
+    "alt": "Tony airing out of a concrete bowl into the evening sky"
+  },
+  {
+    "key": "western-grass",
+    "id": "1igD_opjLEEBGlU8JCAUtzLYPW9sWgEHM",
+    "set": "model",
+    "series": "tall-grass",
+    "alt": "Tony in a cream hat and brown jacket among tall dry grass"
+  },
+  {
+    "key": "night-walk",
+    "id": "1ABOo1uDVoldbFZpXKI652xp7pZgELhtu",
+    "set": "model",
+    "series": "night",
+    "alt": "Tony walking past a white Porsche 944 at night with a shopping bag"
+  },
+  {
+    "key": "night-walk-2",
+    "id": "1Btu7CFvegQdTSoZGAbfJ_k0KCMAGJnG-",
+    "set": "model",
+    "series": "night",
+    "alt": "Tony walking beside a white Porsche 944 at night, a brick wall behind"
+  },
+  {
+    "key": "night-hood",
+    "id": "1NfzU63oqcu59fQxbFslf-ZGdEQIY59WH",
+    "set": "model",
+    "series": "night",
+    "alt": "Tony in a brown hooded jacket smiling, a Porsche 944 behind him at night"
+  },
+  {
+    "key": "night-headlights",
+    "id": "1BCyJmPW6LYeNhquoGhMBRgwonxMvhMLk",
+    "set": "model",
+    "series": "night",
+    "alt": "Tony walking toward the camera in front of a Porsche 944’s headlights"
+  },
+  {
+    "key": "night-door",
+    "id": "1KhzeS_mCwnx48vht3xa7kp6qW80Awtlz",
+    "set": "model",
+    "series": "night",
+    "alt": "Tony in a brown hood climbing into a white Porsche 944"
+  },
+  {
+    "key": "night-denim",
+    "id": "1U9oL-fKD4TZPNTd7DKZItj0LbSmVNdoc",
+    "set": "model",
+    "series": "night",
+    "alt": "Close on a denim jacket’s leather patch beside a Porsche crest"
+  },
+  {
+    "key": "night-hat",
+    "id": "1Hw62EmkqhF9oc2ZlTN__1ZbKNoqbncH0",
+    "set": "model",
+    "series": "night",
+    "alt": "Tony in a cream cowboy hat and denim shirt smiling against a brick wall at night"
+  },
+  {
+    "key": "night-perch",
+    "id": "1M3Kbe_Vj9NfALINlMLdomcghCI2LmdxB",
+    "set": "model",
+    "series": "night",
+    "alt": "Tony in a cowboy hat sitting on the nose of a white Porsche 944 at night"
+  },
+  {
+    "key": "night-window",
+    "id": "1pOsg80fiAVrGO36tcKgO9H6U1qH-IoQc",
+    "set": "model",
+    "series": "night",
+    "alt": "Tony in a beanie looking out of a Porsche 944 window"
+  },
+  {
+    "key": "night-side",
+    "id": "116ZGg548mvnAJO0WMbaP7nsCL9LP09d6",
+    "set": "model",
+    "series": "night",
+    "alt": "Tony at the wheel of a white Porsche 944, side view at night"
+  },
+  {
+    "key": "garage-trails",
+    "id": "1YEtWPr9IDcfqbrRFrLePwkEoNhFXLu1A",
+    "set": "skate",
+    "series": "garage",
+    "alt": "Tony’s skates under flash at night, the city lights pulled into long trails by a slow shutter"
+  },
+  {
+    "key": "night-drag",
+    "id": "1nbx6kdEDkJhTUCpF57A771jeIYZJHqSJ",
+    "set": "model",
+    "series": "night",
+    "alt": "Tony in a cowboy hat in front of a Porsche 944’s headlights, the night pulled into motion by a slow shutter"
+  },
+  {
+    "key": "night-drag-2",
+    "id": "1POb5gTt51UPsjN-rgI4YavzztogFwyi0",
+    "set": "model",
+    "series": "night",
+    "alt": "Tony tipping his cowboy hat beside a Porsche 944 at night, light trails behind"
+  },
+  {
+    "key": "night-drag-3",
+    "id": "1vtu81hyQLPhy1Ff9Vq37i86roi0CB9Dy",
+    "set": "model",
+    "series": "night",
+    "alt": "Tony stepping toward the camera past a Porsche 944’s headlights, the scene streaked by a slow shutter"
+  },
+  {
+    "key": "fragrance-chair-2",
+    "id": "1VeJZhVXsXuU9qLgYgVYsiq_gbJht-oCJ",
+    "set": "model",
+    "series": "fragrance",
+    "alt": "Tony in a pale grey suit in a tan leather chair, a fragrance bottle in hand"
+  },
+  {
+    "key": "cruiser-door",
+    "id": "16NTuJ3e1--qWLuXPJrKcByX05wggFKvS",
+    "set": "model",
+    "series": "portraits",
+    "alt": "Tony in a mustard sweater beside a vintage Toyota Land Cruiser"
   }
 ]

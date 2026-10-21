@@ -25,7 +25,7 @@ export const nav = {
 } as const;
 
 export const home = {
-  heroLabel: 'TONY Skate Club. Tony grinding a ledge at a skatepark, from a Razors Skate Co. clip.',
+  heroLabel: 'TONY Skate Club. Tony lacing his Rollerblade Twister XTs and jumping a ledge at the Tennessee Capitol, from his Rollerblade team part.',
   split: {
     club: {
       word: 'Skate',
@@ -93,6 +93,8 @@ export const tony = {
   },
   skate: {
     title: 'Skate',
+    lead: 'Pro on the Rollerblade team: street and freeride, out of Nashville.',
+    watch: 'Watch Tony skate',
     facts: [
       { term: 'Team', detail: 'Rollerblade' },
       { term: 'Style', detail: 'Street and freeride' },
@@ -111,6 +113,40 @@ export const tony = {
       caption: 'Rooted, for Rhude and Honda.', // TODO(confirm): credit and whether it may be shown here
     },
   },
+  // The order of the photos in Tony's books, shoot by shoot, with no labels on the page. `series` ids
+  // match scripts/photos.json; `cover` leads its shoot. Only Eris's picks from the Drive folder appear.
+  books: {
+    model: [
+      // Opens on Tony in the air with headphones; the suit and fragrance shoot sits mid-book (Eris, 2026-10-21).
+      { id: 'headphones', series: ['headphones'], cover: 'headphones-air' },
+      { id: 'tall-grass', series: ['tall-grass'], cover: 'western-wheat' },
+      { id: 'night', series: ['night'], cover: 'night-hat' },
+      { id: 'studio', series: ['studio'], cover: 'studio-seated' },
+      { id: 'ranch', series: ['ranch'], cover: 'ranch-flag' },
+      // 279 Fragrance: the bottle reads CAMMEO, and Tony's Instagram (2026-04-28) announces the 279 Fragrance
+      // Cammeo campaign, shot by @dlshots. TODO(confirm) the black-jacket frames (bottle reads LAPEL) are 279 too.
+      { id: 'fragrance', series: ['fragrance'], cover: 'fragrance-close' },
+      { id: 'truck', series: ['truck'], cover: 'truck-laugh' },
+      { id: 'engines', series: ['roadside', 'hangar'], cover: 'moto-hangar' },
+      { id: 'summer', series: ['summer'], cover: 'summer-hat' },
+      { id: 'dunes', series: ['dunes'], cover: 'dunes-leap' },
+      { id: 'booth', series: ['booth'], cover: 'booth-seated' },
+      { id: 'bike', series: ['bike'], cover: 'bike-wave' },
+      { id: 'portraits', series: ['portraits'], cover: 'cruiser-seated' },
+    ],
+    skate: [
+      // Opens on the mountain road (Eris, 2026-10-21).
+      { id: 'mountain', series: ['mountain'], cover: 'mountain-road-4' },
+      // The headphones shoot's skate frames, also in the model book (Eris, 2026-10-21).
+      { id: 'headphones-skate', series: [], keys: ['headphones-air', 'canopy-roll', 'headphones-ramp', 'headphones-hands', 'headphones-feet'], cover: 'headphones-air' },
+      { id: 'garage', series: ['garage'], cover: 'garage-perch' },
+      { id: 'parks', series: ['parks'], cover: 'park-air' },
+    ],
+  },
+  tabs: [
+    { href: '/tony', label: 'Model' },
+    { href: '/tony/skate', label: 'Skate' },
+  ],
   film: {
     title: 'French Class',
     body: 'A short skate film: Tony on a wooded road in plaid, with a French lesson for subtitles.',
@@ -144,14 +180,16 @@ export type Edit = {
   channel: string;
   note: string;
   vertical?: boolean;
+  /** Our own poster in place of YouTube's thumbnail. */
+  poster?: string;
 };
 
 export const edits: Edit[] = [
+  { id: 'YLcKPQl-tbo', title: 'My Escape: Tony’s World', channel: 'Rollerblade', note: 'His story: Nashville, Asphalt Beach, and why he skates. Richard Williams, 2021.', poster: '/moments/escape-poster-v3.jpg' },
   { id: '1j8R7Y7CJHs', title: 'Rockit', channel: 'Rollerblade', note: 'Nashville street, filmed by Zach Leavell. 2025.' },
-  { id: 'U6aXyUZ9cEw', title: 'Tony Woodland', channel: 'Rollerblade', note: 'His Rollerblade team part.' },
-  { id: 'hraOpDyJZ0o', title: 'Los Angeles', channel: 'SK Films', note: 'A trip edit from LA.' },
-  { id: '_YQfCCO5nvw', title: 'Tony Woodland 2025', channel: 'Rollerblade', note: 'One minute, vertical.', vertical: true },
-  { id: 'cc2pZo5FazI', title: 'Twister XT unboxing', channel: 'Rollerblade', note: 'Tony sets up his skates. 2022.' },
+  { id: 'U6aXyUZ9cEw', title: 'Tony Woodland', channel: 'Rollerblade', note: 'His Rollerblade team part, on Twister XTs at the Capitol. 2023.' },
+  { id: '9CIGkk0fzmE', title: 'Pay Day', channel: 'Blank', note: 'His part for Blank, Rollerblade’s street skate line. 2022.' },
+  { id: '_YQfCCO5nvw', title: 'Tony Woodland 2025', channel: 'Rollerblade', note: 'No music, just the sound of skating. Vertical.', vertical: true },
 ];
 
 export const footer = {
@@ -162,8 +200,8 @@ export const footer = {
     { title: 'Book', links: [{ href: '/tony', label: 'About Tony' }, { href: `mailto:${site.email}`, label: 'Email Tony' }] },
   ],
   credit: { label: 'Site by Syntra AI', href: 'https://syntraai.tech' },
-  // TODO(confirm): Rollerblade and Razors photo and footage use. Shown as a plain credit line for now.
-  media: 'Photos by Rollerblade and friends. Footage by Razors Skate Co.',
+  // TODO(confirm): Rollerblade photo and footage use. Shown as a plain credit line for now.
+  media: 'Photos and footage by Rollerblade, and friends.',
 } as const;
 
 export const notFound = {

@@ -48,11 +48,13 @@ is not used (Eris, 2026-10-21: "that was just vibes").
 ## Signature: the film and the ladder
 
 Revised 2026-10-21 (later the same day): Eris's TONY GIF was a mood reference, not an asset. Nothing
-from it is on the site. The hero is real sponsor footage: a Razors Skate Co. clip of Tony hitting a park ledge, 12 s,
-looping, muted, square. On phones it is a 9:16 crop, full bleed. From md it stands as a square
-poster column on concrete, the mockup's layout. The type over it is the mockup's idea set live:
-- the ladder, TONY four times, ink, sized by the viewport, stepping in once on load in four beats
-  200 ms apart with no easing, then holding. It never strobes;
+from it is on the site. The hero is real sponsor footage: 10 s of Tony's Rollerblade team part, from
+the Twister XT close-up to the stair gap at the Capitol, looping, muted, 9:16, under an ink scrim (15%, deepening toward the bottom, where the ladder sits).
+On phones it is full bleed. From md it stands as a 9:16 poster column on concrete, the mockup's
+layout. The type over it is the mockup's idea set live:
+- the ladder, TONY four times, white, inside the column and over the lower half of the footage so
+  his face stays clear, sized by the viewport, stepping in once on load in four beats 200 ms apart
+  with no easing, then holding. It never strobes;
 - the rails, SKATE CLUB vertical at both edges, bold then thin;
 - a thin ink line dropping out of the bottom, as the scroll cue.
 Reduced motion: the poster frame, the ladder at rest, no video playback.
@@ -62,6 +64,18 @@ Echoes elsewhere, all static:
   LOST three times, then TONY.
 - **The wheel mark** (four circles, from the wordmark) is the bullet in fact lists and the favicon.
 - **The rails** only appear in the hero.
+
+## Moments
+
+Added 2026-10-21. A moment is a few silent seconds of Rollerblade's film of Tony that behaves like a
+photograph: no controls, no play icon, the poster first, playing only while on screen, never under
+reduced motion. One per page at most, and never next to the hero.
+- Home: the Tony half of the split is Tony turning to the camera with a wide smile and opening his
+  arms (Rockit, 2025, 60 fps at half speed, 5 s, native 1920x1080). The club half stays a still.
+- Everywhere else uses photographs. Rule: no soft media (see CLAUDE.md). The greenway clip and the
+  frame grabs from My Escape were tried and removed the same day because they read as blurry.
+- The My Escape poster in the edits room is three Rollerblade press photos side by side, not a frame.
+Built by `scripts/moments.mjs` into `public/moments/` and `src/content/moments.ts`.
 
 ## Color (locked)
 

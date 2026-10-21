@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import Link from 'next/link';
-import { ContactSheet } from '@/components/ContactSheet';
-import { FactList } from '@/components/FactList';
+import { Book } from '@/components/Book';
+import { ProfileTabs } from '@/components/ProfileTabs';
 import { site, tony } from '@/content/site';
-import { photo, photoSet } from '@/content/photos';
+import { photo } from '@/content/photos';
+import { bookPhotos } from '@/content/books';
 
-export const metadata: Metadata = { title: 'Tony', description: tony.lead };
+export const metadata: Metadata = { title: 'Tony: model', description: tony.lead };
 
-export default function TonyPage() {
+// Tony's modeling profile: who he is, his book by shoot, how to book him.
+export default function TonyModelPage() {
   const portrait = photo('studio-tank');
-  const skateShot = photo('rb-mural-wallride');
   return (
     <>
       <section className="bg-fin">
@@ -18,6 +18,7 @@ export default function TonyPage() {
           <div>
             <h1 className="type-display">{tony.title}</h1>
             <p className="measure mt-8 text-title font-medium [font-variation-settings:'wdth'_105]">{tony.lead}</p>
+            <ProfileTabs current="/tony" />
           </div>
           <div className="relative aspect-[2/3] w-full">
             <Image src={portrait.src} alt={portrait.alt} fill preload sizes="(min-width: 768px) 40vw, 100vw" placeholder="blur" blurDataURL={portrait.blur} className="object-cover" />
@@ -25,76 +26,53 @@ export default function TonyPage() {
         </div>
       </section>
 
-      <section aria-label="About Tony" className="mx-auto grid max-w-[var(--container-content)] gap-12 px-4 py-24 md:grid-cols-[7fr_5fr] md:px-8 md:py-36">
-        <div className="space-y-6">
-          {tony.bio.map((p) => (
-            <p key={p} className="measure">
-              {p}
-            </p>
-          ))}
-        </div>
-        <figure className="md:pt-2">
-          <blockquote className="type-title">“{tony.quote.text}”</blockquote>
-          <figcaption className="mt-3 text-small text-asphalt">{tony.quote.source}</figcaption>
-          <p className="mt-10 border-t border-ink pt-4 text-small">
-            <span className="font-bold">{tony.aside.q}</span> {tony.aside.a}
-          </p>
-        </figure>
-      </section>
-
-      <section aria-labelledby="skate" className="border-t border-ink">
-        <div className="mx-auto grid max-w-[var(--container-content)] gap-12 px-4 py-24 md:grid-cols-[5fr_7fr] md:px-8 md:py-36">
-          <div>
-            <h2 id="skate" className="type-brand text-[clamp(3.5rem,10vw,8rem)]">
-              {tony.skate.title}
-            </h2>
-            <FactList items={tony.skate.facts} className="mt-10" />
-            <p className="mt-8">
-              <Link href="/edits" className="link font-semibold">
-                {tony.skate.link}
-              </Link>
-            </p>
-            <div className="mt-10 border-t border-ink pt-6">
-              <h3 className="type-title">{tony.film.title}</h3>
-              <p className="measure mt-2 text-asphalt">{tony.film.body}</p>
+      <section aria-labelledby="model" className="mx-auto max-w-[var(--container-content)] px-4 py-24 md:px-8 md:py-32">
+        <div className="mb-14 grid gap-8 md:grid-cols-[5fr_7fr] md:items-end">
+          <h2 id="model" className="type-brand text-[clamp(3.5rem,10vw,8rem)]">
+            {tony.model.title}
+          </h2>
+          <div className="grid gap-8 sm:grid-cols-[1fr_auto] sm:items-end">
+            <div>
+              <p className="measure">{tony.model.body}</p>
+              <a href={`mailto:${site.email}`} className="btn mt-6">
+                {tony.model.cta}
+              </a>
             </div>
-          </div>
-          <div className="relative aspect-[4/5] w-full">
-            <Image src={skateShot.src} alt={skateShot.alt} fill sizes="(min-width: 768px) 55vw, 100vw" placeholder="blur" blurDataURL={skateShot.blur} className="object-cover" />
+            <figure className="w-[9.5rem]">
+              <video
+                className="aspect-[9/16] w-full bg-fin object-cover"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                poster={tony.model.reel.poster}
+                src={tony.model.reel.src}
+                aria-label={tony.model.reel.caption}
+              />
+              <figcaption className="mt-2 text-small text-asphalt">{tony.model.reel.caption}</figcaption>
+            </figure>
           </div>
         </div>
+        <Book photos={bookPhotos('model')} label="Model book" />
       </section>
 
-      <section aria-labelledby="model" className="border-t border-ink">
-        <div className="mx-auto max-w-[var(--container-content)] px-4 py-24 md:px-8 md:py-36">
-          <div className="mb-12 grid gap-8 md:grid-cols-[5fr_7fr] md:items-end">
-            <h2 id="model" className="type-brand text-[clamp(3.5rem,10vw,8rem)]">
-              {tony.model.title}
-            </h2>
-            <div className="grid gap-8 sm:grid-cols-[1fr_auto] sm:items-end">
-              <div>
-                <p className="measure">{tony.model.body}</p>
-                <a href={`mailto:${site.email}`} className="btn mt-6">
-                  {tony.model.cta}
-                </a>
-              </div>
-              <figure className="w-[9.5rem]">
-                <video
-                  className="aspect-[9/16] w-full bg-fin object-cover"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  preload="metadata"
-                  poster={tony.model.reel.poster}
-                  src={tony.model.reel.src}
-                  aria-label={tony.model.reel.caption}
-                />
-                <figcaption className="mt-2 text-small text-asphalt">{tony.model.reel.caption}</figcaption>
-              </figure>
-            </div>
+      <section aria-label="About Tony" className="border-t border-ink">
+        <div className="mx-auto grid max-w-[var(--container-content)] gap-12 px-4 py-24 md:grid-cols-[7fr_5fr] md:px-8 md:py-32">
+          <div className="space-y-6">
+            {tony.bio.map((p) => (
+              <p key={p} className="measure">
+                {p}
+              </p>
+            ))}
           </div>
-          <ContactSheet photos={photoSet('model')} />
+          <figure className="md:pt-2">
+            <blockquote className="type-title">“{tony.quote.text}”</blockquote>
+            <figcaption className="mt-3 text-small text-asphalt">{tony.quote.source}</figcaption>
+            <p className="mt-10 border-t border-ink pt-4 text-small">
+              <span className="font-bold">{tony.aside.q}</span> {tony.aside.a}
+            </p>
+          </figure>
         </div>
       </section>
 

@@ -53,13 +53,13 @@ export function Nav() {
       </a>
       <header
         className={`fixed inset-x-0 top-0 z-30 transition-colors duration-150 ${
-          solid ? 'border-b border-ink bg-concrete' : 'border-b border-transparent'
+          solid || path !== '/' ? 'border-b border-ink bg-concrete' : 'border-b border-transparent'
         }`}
       >
         <div className="mx-auto grid h-16 max-w-[var(--container-content)] grid-cols-[1fr_auto_1fr] items-center px-4 md:h-20 md:px-8">
           <nav aria-label="Primary" className="hidden gap-8 md:flex">
             {nav.left.map((i) => (
-              <NavLink key={i.href} item={i} active={path === i.href} />
+              <NavLink key={i.href} item={i} active={path === i.href || path.startsWith(`${i.href}/`)} />
             ))}
           </nav>
           <Link href="/" aria-label="TONY Skate Club, home" className="col-start-2">
@@ -68,7 +68,7 @@ export function Nav() {
           </Link>
           <nav aria-label="Secondary" className="hidden justify-end gap-8 md:flex">
             {nav.right.map((i) => (
-              <NavLink key={i.href} item={i} active={path === i.href} />
+              <NavLink key={i.href} item={i} active={path === i.href || path.startsWith(`${i.href}/`)} />
             ))}
           </nav>
           <button

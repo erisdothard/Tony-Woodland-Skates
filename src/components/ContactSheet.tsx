@@ -6,7 +6,16 @@ import type { Photo } from '@/content/photos';
 
 /* A photographer's contact sheet: justified rows at each photo's true aspect ratio, hairline gaps,
    nothing cropped to a square. Click opens the photo full screen (native <dialog>). */
-export function ContactSheet({ photos, rowHeight = 260 }: { photos: Photo[]; rowHeight?: number }) {
+export function ContactSheet({
+  photos,
+  rowHeight = 260,
+  grid = false,
+}: {
+  photos: Photo[];
+  rowHeight?: number;
+  /** An even grid: every cell the same 4:5 shape, four across (two on phones). */
+  grid?: boolean;
+}) {
   const dialog = useRef<HTMLDialogElement>(null);
   const opener = useRef<HTMLButtonElement | null>(null);
   const [open, setOpen] = useState<number | null>(null);
@@ -44,6 +53,27 @@ export function ContactSheet({ photos, rowHeight = 260 }: { photos: Photo[]; row
 
   return (
     <>
+      {grid ? (
+        <ul className="grid grid-cols-2 gap-[3px] md:grid-cols-4">
+          {photos.map((p, i) => (
+            <li key={p.key}>
+              <button type="button" onClick={(e) => show(i, e.currentTarget)} className="group block w-full" aria-label={`Open photo: ${p.alt}`}>
+                <span className="relative block aspect-[4/5] w-full overflow-hidden">
+                  <Image
+                    src={p.src}
+                    alt=""
+                    fill
+                    sizes="(min-width: 768px) 25vw, 50vw"
+                    placeholder="blur"
+                    blurDataURL={p.blur}
+                    className="object-cover transition-transform duration-500 ease-[var(--ease-ui)] group-hover:scale-[1.03]"
+                  />
+                </span>
+              </button>
+            </li>
+          ))}
+        </ul>
+      ) : (
       <ul className="flex flex-wrap gap-[3px]" style={{ ['--row' as string]: `${rowHeight}px` }}>
         {photos.map((p, i) => {
           const ratio = p.width / p.height;
@@ -64,7 +94,7 @@ export function ContactSheet({ photos, rowHeight = 260 }: { photos: Photo[]; row
                     src={p.src}
                     alt=""
                     fill
-                    sizes={`(min-width: 768px) ${Math.round(rowHeight * ratio * 1.4)}px, 50vw`}
+                    sizes={`(min-width: 768px) ${Math.round(rowHeight * ratio * 1.4)}px, min(100vw, ${Math.round(rowHeight * ratio * 1.4)}px)`}
                     placeholder="blur"
                     blurDataURL={p.blur}
                     className="object-cover"
@@ -78,6 +108,7 @@ export function ContactSheet({ photos, rowHeight = 260 }: { photos: Photo[]; row
         {/* Keeps the last row from stretching. */}
         <li aria-hidden className="grow-[10]" />
       </ul>
+      )}
 
       <dialog
         ref={dialog}
@@ -94,14 +125,24 @@ export function ContactSheet({ photos, rowHeight = 260 }: { photos: Photo[]; row
                 Close
               </button>
             </div>
-            <div className="relative min-h-0 flex-1">
-              <Image key={current.key} src={current.src} alt={current.alt} fill sizes="100vw" className="object-contain" />
+            {/* Never larger than the photo's own pixels on a 2x screen, so smaller originals stay crisp. */}
+            <div className="flex min-h-0 flex-1 items-center justify-center px-4 md:px-8">
+              <Image
+                key={current.key}
+                src={current.src}
+                alt={current.alt}
+                width={current.width}
+                height={current.height}
+                sizes="100vw"
+                className="h-auto max-h-full w-auto max-w-full object-contain"
+                style={{ maxWidth: `min(100%, ${current.width / 2}px)`, maxHeight: `min(100%, ${current.height / 2}px)` }}
+              />
             </div>
             <div className="flex items-center justify-between gap-4 px-4 py-4 md:px-8">
               <button type="button" onClick={() => step(-1)} className="py-2 text-small font-semibold">
                 Previous
               </button>
-              <p className="measure text-center text-small text-white/80">{current.alt}</p>
+              <span aria-hidden />
               <button type="button" onClick={() => step(1)} className="py-2 text-small font-semibold">
                 Next
               </button>
