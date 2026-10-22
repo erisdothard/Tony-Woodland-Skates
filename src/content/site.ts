@@ -221,7 +221,7 @@ export const footer = {
     { title: 'Skate', links: [{ href: '/club', label: 'How the club works' }, { href: site.instagram.url, label: `Instagram ${site.instagram.handle}` }] },
     { title: 'Book', links: [{ href: '/tony', label: 'About Tony' }, { href: `mailto:${site.email}`, label: 'Email Tony' }] },
   ],
-  credit: { label: 'Site by Syntra AI', href: 'https://syntraai.tech' },
+  credit: { label: 'Site by Syntra AI', href: 'https://www.syntraai.tech' },
   // TODO(confirm): Rollerblade photo and footage use. Shown as a plain credit line for now.
   media: 'Photos and footage by Rollerblade, and friends.',
 } as const;
