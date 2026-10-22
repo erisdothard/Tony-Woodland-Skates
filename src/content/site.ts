@@ -116,31 +116,53 @@ export const tony = {
   // The order of the photos in Tony's books, shoot by shoot, with no labels on the page. `series` ids
   // match scripts/photos.json; `cover` leads its shoot. Only Eris's picks from the Drive folder appear.
   books: {
+    // The order of the photos in Tony's books, shoot by shoot, with no labels on the page. `series` ids
+    // match scripts/photos.json; `cover` (optional) leads its shoot. Only Eris's picks appear: the
+    // Operation Tony Drive folder and his Instagram (@ynotwoodland), picked 2026-10-21.
     model: [
-      // Opens on Tony in the air with headphones; the suit and fragrance shoot sits mid-book (Eris, 2026-10-21).
+      // Opens on Tony in the air with headphones; the fragrance shoot sits mid-book (Eris, 2026-10-21).
       { id: 'headphones', series: ['headphones'], cover: 'headphones-air' },
+      { id: 'white-shirt', series: ['white-shirt'] },
       { id: 'tall-grass', series: ['tall-grass'], cover: 'western-wheat' },
       { id: 'night', series: ['night'], cover: 'night-hat' },
+      { id: 'dickies', series: ['dickies'] },
       { id: 'studio', series: ['studio'], cover: 'studio-seated' },
+      { id: 'nyc', series: ['nyc'] },
       { id: 'ranch', series: ['ranch'], cover: 'ranch-flag' },
+      { id: 'bw-barn', series: ['bw-barn'] },
+      { id: 'rei', series: ['rei'] },
       // 279 Fragrance: the bottle reads CAMMEO, and Tony's Instagram (2026-04-28) announces the 279 Fragrance
       // Cammeo campaign, shot by @dlshots. TODO(confirm) the black-jacket frames (bottle reads LAPEL) are 279 too.
       { id: 'fragrance', series: ['fragrance'], cover: 'fragrance-close' },
       { id: 'truck', series: ['truck'], cover: 'truck-laugh' },
+      { id: 'green-sweater', series: ['green-sweater'] },
       { id: 'engines', series: ['roadside', 'hangar'], cover: 'moto-hangar' },
+      { id: 'plants', series: ['plants'] },
       { id: 'summer', series: ['summer'], cover: 'summer-hat' },
+      { id: 'bmw', series: ['bmw'] },
       { id: 'dunes', series: ['dunes'], cover: 'dunes-leap' },
+      { id: 'studio-brown', series: ['studio-brown'] },
       { id: 'booth', series: ['booth'], cover: 'booth-seated' },
       { id: 'bike', series: ['bike'], cover: 'bike-wave' },
+      { id: 'bw-cap', series: ['bw-cap'] },
       { id: 'portraits', series: ['portraits'], cover: 'cruiser-seated' },
     ],
     skate: [
-      // Opens on the mountain road (Eris, 2026-10-21).
+      // Opens on the mountain road, then Times Square (Eris, 2026-10-21).
       { id: 'mountain', series: ['mountain'], cover: 'mountain-road-4' },
+      { id: 'times-square', series: ['times-square'] },
       // The headphones shoot's skate frames, also in the model book (Eris, 2026-10-21).
       { id: 'headphones-skate', series: [], keys: ['headphones-air', 'canopy-roll', 'headphones-ramp', 'headphones-hands', 'headphones-feet'], cover: 'headphones-air' },
       { id: 'garage', series: ['garage'], cover: 'garage-perch' },
+      { id: 'capcon', series: ['capcon'] },
+      { id: 'red-pants', series: ['red-pants'] },
+      { id: 'underpass', series: ['underpass'] },
       { id: 'parks', series: ['parks'], cover: 'park-air' },
+      { id: 'sf-trip', series: ['sf-trip'] },
+      { id: 'nyc-park', series: ['nyc-park'] },
+      { id: 'ig-street', series: ['ig-street'] },
+      { id: 'ig-parks', series: ['ig-parks'] },
+      { id: 'asphalt-beach', series: ['asphalt-beach'] },
     ],
   },
   tabs: [

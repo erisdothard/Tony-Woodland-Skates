@@ -2,9 +2,10 @@ import Link from 'next/link';
 import { Hero } from '@/components/Hero';
 import { Split } from '@/components/Split';
 import { ClubField } from '@/components/ClubField';
-import { VideoRoom } from '@/components/VideoRoom';
+import { ClipReel } from '@/components/ClipReel';
 import { ContactSheet } from '@/components/ContactSheet';
-import { club, edits, home } from '@/content/site';
+import { club, home } from '@/content/site';
+import { clips } from '@/content/clips';
 import { photo } from '@/content/photos';
 import { moment } from '@/content/moments';
 
@@ -25,17 +26,7 @@ export default function Home() {
           { ...home.split.tony, photo: photo('studio-hand'), moment: moment('tony-smile'), ground: 'fin' },
         ]}
       />
-      <VideoRoom
-        title={home.edits.title}
-        edits={edits.slice(0, 3)}
-        footer={
-          <p className="mt-10">
-            <Link href="/edits" className="link">
-              {home.edits.link}
-            </Link>
-          </p>
-        }
-      />
+      <ClipReel title={home.edits.title} clips={clips} link={{ href: '/edits', label: home.edits.link }} />
       <section aria-labelledby="sheet" className="mx-auto max-w-[var(--container-content)] px-4 py-24 md:px-8 md:py-36">
         <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
           <h2 id="sheet" className="type-display">

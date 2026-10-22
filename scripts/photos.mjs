@@ -20,8 +20,10 @@ await mkdir(out, { recursive: true });
 
 const exists = (p) => access(p).then(() => true, () => false);
 
-// Each manifest entry has a Drive `id` or a direct `url` (Rollerblade's press photos of Tony).
-async function original({ id, url }) {
+// Each manifest entry has a Drive `id`, a direct `url` (Rollerblade's press photos of Tony), or a
+// local `file` under assets-src/ (photos pulled from Tony's Instagram, @ynotwoodland).
+async function original({ id, url, file: local }) {
+  if (local) return readFile(path.join(root, 'assets-src', local));
   const file = path.join(cache, id ?? Buffer.from(url).toString('base64url').slice(-40));
   if (!(await exists(file))) {
     const src = url ?? `https://drive.usercontent.google.com/download?id=${id}&export=download&confirm=t`;

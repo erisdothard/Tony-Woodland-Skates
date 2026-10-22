@@ -32,9 +32,17 @@ export function Book({ photos, label }: { photos: Photo[]; label: string }) {
     thumbs.current?.querySelector('[aria-current="true"]')?.scrollIntoView({ block: 'nearest', inline: 'nearest' });
   }, [i]);
 
-  // The thumbnail grid always ends on a full row: four across if that fills it, else five, else three.
-  const cols = [4, 5, 3].find((c) => count % c === 0) ?? 4;
-  const colClass = { 3: 'md:grid-cols-3', 4: 'md:grid-cols-4', 5: 'md:grid-cols-5' }[cols];
+  // The thumbnail grid always ends on a full row. Try four, five, three or six across; if none divides
+  // the count, the opening photo runs 2x2 (it fills four cells), which evens most counts out.
+  const fit = (() => {
+    for (const lead of [false, true]) {
+      const cells = count + (lead ? 3 : 0);
+      const cols = [4, 5, 3, 6].find((c) => cells % c === 0 && (!lead || c >= 4));
+      if (cols) return { cols, lead };
+    }
+    return { cols: 4, lead: false };
+  })();
+  const colClass = { 3: 'md:grid-cols-3', 4: 'md:grid-cols-4', 5: 'md:grid-cols-5', 6: 'md:grid-cols-6' }[fit.cols];
 
   const capped = (p: Photo) => ({ maxWidth: `min(100%, ${p.width / 2}px)`, maxHeight: `min(100%, ${p.height / 2}px)` });
 
@@ -84,13 +92,13 @@ export function Book({ photos, label }: { photos: Photo[]; label: string }) {
         className={`flex min-w-0 gap-[3px] overflow-x-auto pb-1 md:grid md:h-[74svh] md:max-h-[780px] ${colClass} md:content-start md:overflow-y-auto md:overflow-x-hidden md:pb-0 md:pr-1`}
       >
         {photos.map((p, n) => (
-          <li key={p.key} className="shrink-0">
+          <li key={p.key} className={`shrink-0 ${fit.lead && n === 0 ? 'md:col-span-2 md:row-span-2' : ''}`}>
             <button
               type="button"
               onClick={() => setI(n)}
               aria-label={`Photo ${n + 1}`}
               aria-current={n === i ? 'true' : undefined}
-              className={`relative block aspect-square h-20 overflow-hidden transition-opacity duration-150 md:h-auto md:w-full ${
+              className={`relative block aspect-square h-20 overflow-hidden transition-opacity duration-150 md:w-full ${fit.lead && n === 0 ? 'md:aspect-auto md:h-full' : 'md:h-auto'} ${
                 n === i ? 'opacity-100 outline outline-2 -outline-offset-2 outline-pants' : 'opacity-70 hover:opacity-100'
               }`}
             >

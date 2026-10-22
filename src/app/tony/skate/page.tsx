@@ -3,14 +3,15 @@ import Image from 'next/image';
 import { Book } from '@/components/Book';
 import { FactList } from '@/components/FactList';
 import { ProfileTabs } from '@/components/ProfileTabs';
-import { VideoRoom } from '@/components/VideoRoom';
-import { edits, tony } from '@/content/site';
+import { ClipReel } from '@/components/ClipReel';
+import { tony } from '@/content/site';
+import { clips } from '@/content/clips';
 import { photo } from '@/content/photos';
 import { bookPhotos } from '@/content/books';
 
 export const metadata: Metadata = { title: 'Tony: skate', description: tony.skate.lead };
 
-// Tony's skating profile: team and setup, his skate book by shoot, and the edits.
+// Tony's skating profile: team and setup, his skate book, and his clips from Instagram.
 export default function TonySkatePage() {
   const hero = photo('garage-perch');
   return (
@@ -44,7 +45,7 @@ export default function TonySkatePage() {
         <Book photos={bookPhotos('skate')} label="Skate book" />
       </section>
 
-      <VideoRoom title={tony.skate.watch} edits={edits} />
+      <ClipReel title={tony.skate.watch} clips={clips} link={{ href: '/edits', label: 'Full edits' }} />
     </>
   );
 }
