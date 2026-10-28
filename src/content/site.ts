@@ -107,12 +107,36 @@ export const tony = {
     title: 'Model',
     body: 'Studio, western, motorcycle and lifestyle work. Tony shoots in Nashville and travels for the right job.',
     cta: 'Email Tony to book',
-    reel: {
-      src: '/hero/rooted.mp4',
-      poster: '/hero/rooted.jpg',
-      caption: 'Rooted, for Rhude and Honda.', // TODO(confirm): credit and whether it may be shown here
-    },
   },
+  // Branded spots from Eris's WeTransfer (2026-10-22), encoded by scripts/brands.mjs at native size.
+  // TODO(confirm): each credit, and that Tony may show each spot here. The three verticals end on the
+  // Rooted card (stay-rooted.com); Be Shootin' has no public source found.
+  brands: {
+    title: 'Brand work',
+    body: 'Spots Tony has fronted for fashion labels.',
+    spots: [
+      { brand: 'Stone Island', credit: 'for Rooted', src: '/brands/stone-island-v1.mp4', poster: '/brands/stone-island-v1.jpg', width: 540, height: 960 },
+      { brand: 'Rhude x Honda', credit: 'for Rooted', src: '/brands/rhude-honda-v1.mp4', poster: '/brands/rhude-honda-v1.jpg', width: 540, height: 960 },
+      { brand: 'Aimé Leon Dore', credit: 'for Rooted', src: '/brands/aime-leon-dore-v1.mp4', poster: '/brands/aime-leon-dore-v1.jpg', width: 540, height: 960 },
+      // The source is an upscale (1920x1080 file, far less real detail), so it is shown small.
+      { brand: "Be Shootin'", credit: 'campaign', src: '/brands/be-shootin-v1.mp4', poster: '/brands/be-shootin-v1.jpg', width: 1920, height: 1080 },
+    ],
+  },
+  // Tony's longer pieces from the same WeTransfer, on their own player. Nothing branded on screen in
+  // these; Tony is in each (the dancer, the pitcher, the rider, the red raincoat).
+  // TODO(confirm): titles for the hangar film and the outdoor spot, and that Tony may show each piece.
+  screen: {
+    title: 'Film & music',
+    body: 'Music videos and short films. Pick one to watch it with sound.',
+    films: [
+      // "Groove King - Tony" in the video's credits (docs/research/sponsors-2026-10-21.md).
+      { title: 'French Class', by: 'halfnoise', note: 'Music video, 2017. Tony dances the lead.', length: '3:28', src: '/film/french-class-v1.mp4', poster: '/film/french-class-v1.jpg', width: 1920, height: 1080 },
+      { title: 'I Was Jack (You Were Diane)', by: 'Jake Owen', note: 'Promo for the single. Tony is the pitcher.', length: '0:59', src: '/film/jack-and-diane-v1.mp4', poster: '/film/jack-and-diane-v1.jpg', width: 1280, height: 720 },
+      { title: 'Hangar', by: 'Fashion film', note: 'Motorcycles and a Cessna at golden hour.', length: '1:00', src: '/film/hangar-v1.mp4', poster: '/film/hangar-v1.jpg', width: 720, height: 900 },
+      { title: 'Outdoors', by: 'Product film', note: 'Tony in the red raincoat.', length: '0:56', src: '/film/outdoor-spot-v1.mp4', poster: '/film/outdoor-spot-v1.jpg', width: 720, height: 720 },
+    ],
+  },
+
   // The order of the photos in Tony's books, shoot by shoot, with no labels on the page. `series` ids
   // match scripts/photos.json; `cover` leads its shoot. Only Eris's picks from the Drive folder appear.
   books: {

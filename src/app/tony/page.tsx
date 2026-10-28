@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { Book } from '@/components/Book';
+import { BrandWork } from '@/components/BrandWork';
+import { FilmRoom } from '@/components/FilmRoom';
 import { ProfileTabs } from '@/components/ProfileTabs';
 import { site, tony } from '@/content/site';
 import { photo } from '@/content/photos';
@@ -8,7 +10,7 @@ import { bookPhotos } from '@/content/books';
 
 export const metadata: Metadata = { title: 'Tony: model', description: tony.lead };
 
-// Tony's modeling profile: who he is, his book by shoot, how to book him.
+// Tony's modeling profile: who he is, his book by shoot, his brand and film work, how to book him.
 export default function TonyModelPage() {
   const portrait = photo('studio-tank');
   return (
@@ -31,31 +33,19 @@ export default function TonyModelPage() {
           <h2 id="model" className="type-brand text-[clamp(3.5rem,10vw,8rem)]">
             {tony.model.title}
           </h2>
-          <div className="grid gap-8 sm:grid-cols-[1fr_auto] sm:items-end">
-            <div>
-              <p className="measure">{tony.model.body}</p>
-              <a href={`mailto:${site.email}`} className="btn mt-6">
-                {tony.model.cta}
-              </a>
-            </div>
-            <figure className="w-[9.5rem]">
-              <video
-                className="aspect-[9/16] w-full bg-fin object-cover"
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="metadata"
-                poster={tony.model.reel.poster}
-                src={tony.model.reel.src}
-                aria-label={tony.model.reel.caption}
-              />
-              <figcaption className="mt-2 text-small text-asphalt">{tony.model.reel.caption}</figcaption>
-            </figure>
+          <div>
+            <p className="measure">{tony.model.body}</p>
+            <a href={`mailto:${site.email}`} className="btn mt-6">
+              {tony.model.cta}
+            </a>
           </div>
         </div>
         <Book photos={bookPhotos('model')} label="Model book" />
       </section>
+
+      <BrandWork {...tony.brands} />
+
+      <FilmRoom {...tony.screen} />
 
       <section aria-label="About Tony" className="border-t border-ink">
         <div className="mx-auto grid max-w-[var(--container-content)] gap-12 px-4 py-24 md:grid-cols-[7fr_5fr] md:px-8 md:py-32">
