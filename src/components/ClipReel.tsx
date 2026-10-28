@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
+import { revealInPanel } from '@/lib/revealInPanel';
 import type { Clip } from '@/content/clips';
 
 /* "Watch Tony skate": his own quick clips from Instagram instead of a YouTube embed. Same layout as
@@ -28,7 +29,7 @@ export function ClipReel({ title, clips, link }: { title: string; clips: readonl
   const colClass = { 3: 'md:grid-cols-3', 4: 'md:grid-cols-4', 5: 'md:grid-cols-5', 6: 'md:grid-cols-6' }[cols];
 
   useEffect(() => {
-    thumbs.current?.querySelector('[aria-current="true"]')?.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+    revealInPanel(thumbs.current);
   }, [i]);
 
   const step = (d: number) => setI((n) => (n + d + count) % count);

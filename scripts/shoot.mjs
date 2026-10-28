@@ -9,7 +9,7 @@ import { existsSync } from 'node:fs';
 const BASE = process.env.SHOOT_URL ?? 'http://127.0.0.1:3100';
 const day = new Date().toISOString().slice(0, 10);
 const OUT = `docs/review/${day}-${process.argv[2] ?? 'gate'}`;
-const ROUTES = ['/', '/club', '/tony', '/edits', '/nope'];
+const ROUTES = ['/', '/club', '/tony', '/tony/skate', '/edits', '/nope'];
 const VIEWPORTS = { m: { width: 390, height: 844 }, d: { width: 1440, height: 900 } };
 const exe = ['/opt/pw-browsers/chromium-1194/chrome-linux/chrome'].find((p) => existsSync(p));
 
@@ -25,7 +25,7 @@ for (const [tag, viewport] of Object.entries(VIEWPORTS)) {
   for (const route of ROUTES) {
     await page.goto(BASE + route, { waitUntil: 'networkidle' });
     await page.evaluate(() => document.fonts.ready);
-    const name = route === '/' ? 'home' : route.slice(1);
+    const name = route === '/' ? 'home' : route.slice(1).replaceAll('/', '-');
     if (route === '/') {
       for (const t of [0, 700, 1500, 2300]) {
         await page.waitForTimeout(t === 0 ? 300 : 800);

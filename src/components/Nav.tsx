@@ -36,6 +36,19 @@ export function Nav() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  // A link to the page you're already on goes back to its top. Next keeps the scroll position for
+  // same-URL navigations, so the logo, the active tab or a footer link would otherwise do nothing.
+  useEffect(() => {
+    const onClick = (e: MouseEvent) => {
+      if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      const a = (e.target as Element).closest('a');
+      if (!a || a.target === '_blank' || a.origin !== location.origin || a.hash) return;
+      if (a.pathname === location.pathname) window.scrollTo({ top: 0 });
+    };
+    document.addEventListener('click', onClick);
+    return () => document.removeEventListener('click', onClick);
+  }, []);
+
   // Close the phone menu whenever the route changes.
   useEffect(() => {
     menu.current?.close();

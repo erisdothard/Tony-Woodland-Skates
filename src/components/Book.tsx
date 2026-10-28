@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
+import { revealInPanel } from '@/lib/revealInPanel';
 import type { Photo } from '@/content/photos';
 
 /* Tony's book: just the photos. A large stage on the left and every photo beside it in an even grid
@@ -29,7 +30,7 @@ export function Book({ photos, label }: { photos: Photo[]; label: string }) {
 
   // Keep the current thumbnail in view inside its panel.
   useEffect(() => {
-    thumbs.current?.querySelector('[aria-current="true"]')?.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+    revealInPanel(thumbs.current);
   }, [i]);
 
   // The thumbnail grid always ends on a full row. Try four, five, three or six across; if none divides
