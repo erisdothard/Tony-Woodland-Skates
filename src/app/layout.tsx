@@ -1,15 +1,14 @@
 import type { Metadata, Viewport } from 'next';
-import { Archivo } from 'next/font/google';
+import { Unbounded } from 'next/font/google';
 import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
 import { site } from '@/content/site';
 import './globals.css';
 
-// One family. The width axis carries the voice (DESIGN.md "Type").
-const archivo = Archivo({
+// One family: Unbounded, Tony's brand font. Weight carries the voice (DESIGN.md "Type").
+const unbounded = Unbounded({
   subsets: ['latin'],
-  axes: ['wdth'],
-  variable: '--font-archivo',
+  variable: '--font-unbounded',
   display: 'swap',
 });
 
@@ -25,7 +24,7 @@ export const viewport: Viewport = { themeColor: '#eef2f5' };
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
-    <html lang="en" className={archivo.variable}>
+    <html lang="en" className={unbounded.variable}>
       <body className="bg-concrete text-ink antialiased">
         <Nav />
         <main id="main">{children}</main>

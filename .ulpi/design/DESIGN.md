@@ -108,18 +108,19 @@ Rule: on the orange field, all type is ink.
 
 ## Type (locked)
 
-One family, **Archivo** (variable, `wdth` 62–125, `wght` 100–900), self-hosted through `next/font`.
-The width axis is the personality: the wordmark is the widest and heaviest, reading copy is normal
-width. That is the same contrast as the GIF's SKATE (bold) CLUB (thin).
+One family, **Unbounded** (variable, `wght` 200–900, one width), self-hosted through `next/font`.
+Eris set it as Tony's brand font on 2026-11-12; it replaced Archivo. Unbounded has no width axis,
+so weight is the personality: the wordmark is the heaviest, reading copy is regular. That is the
+same contrast as the GIF's SKATE (bold) CLUB (thin).
 
 | role | settings | use |
 |---|---|---|
-| ladder / wordmark | wdth 125, wght 900, uppercase, tracking 0.02em, line-height 0.86 | TONY, SKATE, CLUB only. The brand's own words |
-| rail thin | wdth 125, wght 200, uppercase, tracking 0.08em | the CLUB half of the rails |
-| display | wdth 118, wght 800, sentence case, tracking -0.01em, line-height 0.98 | page and section titles |
-| title | wdth 110, wght 700, sentence case, line-height 1.1 | sub-titles, list heads |
-| body | wdth 100, wght 400, 17–19px, line-height 1.55, measure ≤ 62ch | reading copy |
-| small | wdth 100, wght 500, 14px | captions, nav, footer |
+| ladder / wordmark | wght 900, uppercase, tracking 0.02em, line-height 0.86 | TONY, SKATE, CLUB only. The brand's own words |
+| rail thin | wght 200, uppercase, tracking 0.08em | the CLUB half of the rails |
+| display | wght 800, sentence case, tracking -0.01em, line-height 0.98 | page and section titles |
+| title | wght 700, sentence case, line-height 1.1 | sub-titles, list heads |
+| body | wght 400, 17–19px, line-height 1.55, measure ≤ 62ch | reading copy |
+| small | wght 500, 14px | captions, nav, footer |
 
 Uppercase is only for the three brand words. Everything else is sentence case.
 
@@ -179,7 +180,7 @@ generic-page traits. These changes were made before any code was written:
 | first plan | why it was generic | now |
 |---|---|---|
 | ink #0B0B0B with signal orange #FF4A1C, dark sections | the "near-black plus one vermilion accent" default, and the same as every skate site on the board | daylight concrete ground. True black only for type. Orange used as a field |
-| Unbounded or Archivo Expanded display plus Inter or Geist body | two stock families picked by reflex | one family, Archivo, with the width axis carrying the voice |
+| Unbounded or Archivo Expanded display plus Inter or Geist body | two stock families picked by reflex | one family. First Archivo with its width axis; since 2026-11-12 Unbounded, Tony's brand font, with weight carrying the voice |
 | "NASHVILLE • STREET • FREERIDE • ALL LEVELS •" marquee | middle-dot meta string plus a marquee | cut |
 | tracked uppercase section labels | template chrome | uppercase only for TONY / SKATE / CLUB |
 | scroll reveals on every section via `motion` | scattered effects | one burst in the hero. No animation library |

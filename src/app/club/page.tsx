@@ -17,7 +17,7 @@ export default function ClubPage() {
       <section className="mx-auto grid max-w-[var(--container-content)] gap-10 px-4 pt-28 pb-20 md:grid-cols-[7fr_5fr] md:items-end md:px-8 md:pt-36 md:pb-28">
         <div>
           <h1 className="type-display">{club.title}</h1>
-          <p className="measure mt-8 text-title font-medium [font-variation-settings:'wdth'_105]">{club.lead}</p>
+          <p className="measure mt-8 text-title font-medium">{club.lead}</p>
         </div>
         <div className="relative aspect-[4/5] w-full">
           <Image src={hero.src} alt={hero.alt} fill preload sizes="(min-width: 768px) 40vw, 100vw" placeholder="blur" blurDataURL={hero.blur} className="object-cover" />

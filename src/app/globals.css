@@ -10,7 +10,7 @@
   --color-asphalt: #4f5866;
   --color-white: #ffffff;
 
-  --font-sans: var(--font-archivo), "Arial", sans-serif;
+  --font-sans: var(--font-unbounded), "Arial", sans-serif;
 
   --text-small: 0.875rem;
   --text-small--line-height: 1.45;
@@ -37,7 +37,6 @@
     font-family: var(--font-sans);
     font-size: var(--text-body);
     line-height: 1.55;
-    font-variation-settings: "wdth" 100;
     text-rendering: optimizeLegibility;
   }
   ::selection {
@@ -55,17 +54,15 @@
 }
 
 @layer components {
-  /* Archivo's width axis carries the voice: brand words widest, reading copy normal. */
+  /* Unbounded is one width, so weight carries the voice: brand words heaviest, reading copy light. */
   .type-brand {
     font-weight: 900;
-    font-variation-settings: "wdth" 125;
     text-transform: uppercase;
     letter-spacing: 0.02em;
     line-height: 0.86;
   }
   .type-rail-thin {
     font-weight: 200;
-    font-variation-settings: "wdth" 125;
     text-transform: uppercase;
     letter-spacing: 0.08em;
   }
@@ -73,7 +70,6 @@
     font-size: var(--text-display);
     line-height: var(--text-display--line-height);
     font-weight: 800;
-    font-variation-settings: "wdth" 118;
     letter-spacing: -0.01em;
     text-wrap: balance;
   }
@@ -81,7 +77,6 @@
     font-size: var(--text-title);
     line-height: var(--text-title--line-height);
     font-weight: 700;
-    font-variation-settings: "wdth" 110;
     text-wrap: balance;
   }
   .measure {
@@ -114,7 +109,6 @@
     background: var(--color-ink);
     color: var(--color-white);
     font-weight: 700;
-    font-variation-settings: "wdth" 112;
     transition: background-color 160ms var(--ease-ui), color 160ms var(--ease-ui);
   }
   .btn:hover {

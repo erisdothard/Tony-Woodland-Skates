@@ -19,7 +19,7 @@ export default function TonyModelPage() {
         <div className="mx-auto grid max-w-[var(--container-content)] gap-10 px-4 pt-28 pb-16 md:grid-cols-[7fr_5fr] md:items-end md:px-8 md:pt-36 md:pb-24">
           <div>
             <h1 className="type-display">{tony.title}</h1>
-            <p className="measure mt-8 text-title font-medium [font-variation-settings:'wdth'_105]">{tony.lead}</p>
+            <p className="measure mt-8 text-title font-medium">{tony.lead}</p>
             <ProfileTabs current="/tony" />
           </div>
           <div className="relative aspect-[2/3] w-full">

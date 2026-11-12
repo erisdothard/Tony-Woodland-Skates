@@ -14,7 +14,7 @@ const VIEWPORTS = { m: { width: 390, height: 844 }, d: { width: 1440, height: 90
 const exe = ['/opt/pw-browsers/chromium-1194/chrome-linux/chrome'].find((p) => existsSync(p));
 
 await mkdir(OUT, { recursive: true });
-const browser = await chromium.launch(exe ? { executablePath: exe } : {});
+const browser = await chromium.launch(exe ? { executablePath: exe } : { channel: 'chrome' });
 const errors = [];
 
 for (const [tag, viewport] of Object.entries(VIEWPORTS)) {

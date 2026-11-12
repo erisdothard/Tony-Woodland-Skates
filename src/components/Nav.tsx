@@ -10,7 +10,7 @@ type Item = { href: string; label: string };
 
 function NavLink({ item, active }: { item: Item; active: boolean }) {
   const external = item.href.startsWith('mailto:') || item.href.startsWith('http');
-  const cls = `relative py-2 text-small font-semibold [font-variation-settings:'wdth'_112] after:absolute after:inset-x-0 after:bottom-1 after:h-[2px] after:bg-pants after:transition-transform after:duration-150 after:ease-[var(--ease-ui)] ${
+  const cls = `relative py-2 text-small font-semibold after:absolute after:inset-x-0 after:bottom-1 after:h-[2px] after:bg-pants after:transition-transform after:duration-150 after:ease-[var(--ease-ui)] ${
     active ? 'after:scale-x-100' : 'after:scale-x-0 hover:after:scale-x-100'
   }`;
   return external ? (
@@ -87,7 +87,7 @@ export function Nav() {
           <button
             type="button"
             onClick={() => menu.current?.showModal()}
-            className="col-start-3 justify-self-end py-2 text-small font-semibold [font-variation-settings:'wdth'_112] md:hidden"
+            className="col-start-3 justify-self-end py-2 text-small font-semibold md:hidden"
             aria-haspopup="dialog"
           >
             Menu
@@ -108,7 +108,7 @@ export function Nav() {
             <button
               type="button"
               onClick={() => menu.current?.close()}
-              className="col-start-3 justify-self-end py-2 text-small font-semibold [font-variation-settings:'wdth'_112]"
+              className="col-start-3 justify-self-end py-2 text-small font-semibold"
             >
               Close
             </button>
