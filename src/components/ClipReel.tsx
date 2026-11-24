@@ -98,7 +98,7 @@ export function ClipReel({ title, clips, link }: { title: string; clips: readonl
                     n === i ? 'opacity-100 outline outline-2 -outline-offset-2 outline-pants' : 'opacity-60 hover:opacity-100'
                   }`}
                 >
-                  <Image src={c.poster} alt="" fill sizes="(min-width: 768px) 10vw, 80px" placeholder="blur" blurDataURL={c.blur} className="object-cover" />
+                  <Image src={c.poster} alt="" fill sizes="(min-width: 768px) 20vw, 160px" placeholder="blur" blurDataURL={c.blur} className="object-cover" />
                 </button>
               </li>
             ))}
