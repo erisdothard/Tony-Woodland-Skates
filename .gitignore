@@ -47,3 +47,6 @@ next-env.d.ts
 # raw captures stay local; sheets and notes are committed
 /docs/inspo/*.png
 /docs/review/**/*.png
+
+# build-time image variants (scripts/variants.mjs)
+/public/v/

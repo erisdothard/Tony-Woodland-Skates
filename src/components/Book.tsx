@@ -103,7 +103,7 @@ export function Book({ photos, label }: { photos: Photo[]; label: string }) {
                 n === i ? 'opacity-100 outline outline-2 -outline-offset-2 outline-pants' : 'opacity-70 hover:opacity-100'
               }`}
             >
-              <Image src={p.src} alt="" fill sizes="(min-width: 768px) 10vw, 80px" className="object-cover" />
+              <Image src={p.src} alt="" fill sizes={fit.lead && n === 0 ? "(min-width: 768px) 20vw, 80px" : "(min-width: 768px) 10vw, 80px"} className="object-cover" />
             </button>
           </li>
         ))}
